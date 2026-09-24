@@ -71,3 +71,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-crsf-telemetry | [TBS Crossfire telemetry (телеметрія)](docs/fpv/crsf-telemetry.md) | `common/source/docs/common-crsf-telemetry.rst` | `2fe522fe4cca` | 2026-09-24 |
 | common-FPort-receivers | [Receiver FPort](docs/fpv/fport.md) | `common/source/docs/common-FPort-receivers.rst` | `d3eef1119d79` | 2026-09-24 |
 | common-osd-overview | [OSD (накладення даних на відео)](docs/fpv/osd.md) | `common/source/docs/common-osd-overview.rst` | `068ccd0ad534` | 2026-09-24 |
+| common-msp-osd-overview-4.2 | [MSP OSD](docs/fpv/msp-osd.md) | `common/source/docs/common-msp-osd-overview-4.2.rst` | `39349eb7b659` | 2026-09-24 |
