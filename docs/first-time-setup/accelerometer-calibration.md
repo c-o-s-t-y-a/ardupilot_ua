@@ -41,7 +41,7 @@
 
     ![Mission Planner: Calibration Successful](https://ardupilot.org/copter/_images/mp_calibration_successful.png)
 
-> **Примітка.** Якщо в autopilot є вбудований нагрівач IMU (інерційний вимірювальний модуль), рекомендується також [температурне калібрування IMU](https://ardupilot.org/copter/docs/common-imutempcal.html) *(ще не перекладено)*. Деякі autopilot-и проходять це калібрування на заводі — тоді його робити не потрібно.
+> **Примітка.** Якщо в autopilot є вбудований нагрівач IMU (інерційний вимірювальний модуль), рекомендується також [температурне калібрування IMU](imu-temperature-calibration.md). Деякі autopilot-и проходять це калібрування на заводі — тоді його робити не потрібно.
 
 ## Спрощене калібрування
 

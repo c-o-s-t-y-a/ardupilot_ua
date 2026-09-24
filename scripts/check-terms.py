@@ -10,6 +10,11 @@
   4. немає транслітерацій («фейлсейф», «армінг», ...).
 Не перевіряються: заголовки (для правил 1–2), код `...`, жирні латинські
 назви UI (**Calibrate Level**), URL-и посилань і картинок, рядок «> Оригінал:».
+
+Виняток за змістом: коментар «<!-- terms-ignore: UART, bind -->» у рядку перед
+абзацом вимикає всі правила для цих термінів у наступному абзаці (до порожнього
+рядка) — коли слово там означає інше (послідовний порт комп'ютера, а не UART
+autopilot; collective pitch — крок лопатей, а не тангаж апарата).
 """
 import re
 import sys
@@ -59,6 +64,7 @@ def mask(text, pattern):
 def prepare(md):
     """Заміняє пробілами все, що не перевіряється, зберігаючи позиції."""
     md = mask(md, r"(?m)^> Оригінал:.*$")
+    md = mask(md, r"<!--.*?-->")
     md = mask(md, r"`[^`\n]*`")
     md = mask(md, r"\]\([^)\s]*\)")                      # URL-и посилань/картинок
     md = mask(md, r"\*\*[^*\nа-яіїєґА-ЯІЇЄҐ]+\*\*")       # **UI-назви латиницею**
@@ -75,6 +81,16 @@ def check(path, terms):
     def lineno(pos):
         return raw.count("\n", 0, pos) + 1
 
+    # абзаци з «<!-- terms-ignore: ... -->»: {термін: [(початок, кінець)]}
+    ignored = {}
+    for m in re.finditer(r"<!-- terms-ignore: ([^>]+?) -->\n", raw):
+        end = raw.find("\n\n", m.end())
+        for t in m.group(1).split(","):
+            ignored.setdefault(t.strip().lower(), []).append((m.end(), end if end != -1 else len(raw)))
+
+    def is_ignored(en, pos):
+        return any(s <= pos < e for s, e in ignored.get(en.lower(), []))
+
     # дужкові фрагменти, де українська форма дозволена
     brackets = [(m.start(), m.end()) for m in re.finditer(r"\([^()\n]*\)", text)]
 
@@ -89,6 +105,8 @@ def check(path, terms):
             if suffix and suffix.group(0) not in ALLOWED_SUFFIXES:
                 out.append(f"{lineno(m.start())}: суфікс «{m.group(0)}» — дозволено лише -и/-ах")
         for m in en_pattern(en).finditer(body):
+            if is_ignored(en, m.start()):
+                continue
             after = body[m.end():]
             glossed = re.match(r"\s*\(([^()\n]*)\)", after)
             if first:
@@ -99,11 +117,11 @@ def check(path, terms):
             elif glossed and glossed.group(1) == ua:
                 out.append(f"{lineno(m.start())}: повторний переклад «{m.group(0)} {gloss}» — лише при першій появі")
         for m in ua_pattern(ua).finditer(text):
-            if not in_brackets(m.start()):
+            if not in_brackets(m.start()) and not is_ignored(en, m.start()):
                 out.append(f"{lineno(m.start())}: українська форма «{m.group(0)}» без EN (має бути «{en}»)")
 
     for pat in TRANSLIT:
-        for m in re.finditer(rf"(?<![\w]){pat}", text, re.I):
+        for m in re.finditer(rf"(?<![\w]){pat}(?![\w])", text, re.I):
             out.append(f"{lineno(m.start())}: транслітерація «{m.group(0)}»")
 
     for m in re.finditer(r":ref:|^\.\. |\[/?site|\[copywiki", raw, re.M):

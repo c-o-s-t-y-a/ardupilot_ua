@@ -6,7 +6,7 @@
 
 Перше налаштування autopilot (автопілот) включає: завантаження і встановлення GCS (наземна станція керування), монтаж autopilot на frame (рама), підключення до receiver (приймач), живлення і моторів, а потім початкову конфігурацію і калібрування.
 
-> **Примітка.** Розділ передбачає, що ви вже [обрали і зібрали frame](https://ardupilot.org/copter/docs/choosing-a-frame.html) *(ще не перекладено)* та [обрали autopilot](https://ardupilot.org/copter/docs/common-autopilots.html) *(ще не перекладено)*.
+> **Примітка.** Розділ передбачає, що ви вже [обрали і зібрали frame](choosing-a-frame.md) та [обрали autopilot](https://ardupilot.org/copter/docs/common-autopilots.html) *(ще не перекладено)*.
 
 Докладніше про кожен етап (всередині розділів — з розбивкою за моделями autopilot):
 

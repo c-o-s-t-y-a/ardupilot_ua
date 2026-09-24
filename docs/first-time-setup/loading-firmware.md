@@ -4,7 +4,7 @@
 
 Ця сторінка пояснює, як записати firmware (прошивка) ArduPilot в autopilot (автопілот): як визначити, що вже є на платі, який спосіб завантаження через це потрібен і як перевірити результат.
 
-> **Порада.** Якщо на autopilot уже працює ArduPilot і ви просто хочете оновити його до новішої версії, переходьте одразу до [Завантаження firmware на Pixhawk](https://ardupilot.org/copter/docs/common-loading-firmware-onto-pixhawk.html) *(ще не перекладено)*.
+> **Порада.** Якщо на autopilot уже працює ArduPilot і ви просто хочете оновити його до новішої версії, переходьте одразу до [Завантаження firmware на Pixhawk](firmware-with-bootloader.md).
 
 ## Крок 1. Підключіть autopilot до комп'ютера
 
@@ -79,11 +79,11 @@ ls /dev/cu.usbmodem*
 
 ## Крок 3. Завантажте firmware
 
-**Якщо сумісний bootloader є**, виконайте [Завантаження firmware на Pixhawk](https://ardupilot.org/copter/docs/common-loading-firmware-onto-pixhawk.html) *(ще не перекладено)*. GCS встановить firmware через уже наявне USB-підключення. Цим самим способом виконуються і всі подальші оновлення firmware.
+**Якщо сумісний bootloader є**, виконайте [Завантаження firmware на Pixhawk](firmware-with-bootloader.md). GCS встановить firmware через уже наявне USB-підключення. Цим самим способом виконуються і всі подальші оновлення firmware.
 
-**Якщо його немає**, виконайте [Завантаження firmware на плати лише з ChibiOS](https://ardupilot.org/copter/docs/common-loading-firmware-onto-chibios-only-boards.html) *(ще не перекладено)*. Bootloader і firmware ArduPilot завантажуються одним файлом і записуються разом через USB у режимі DFU за допомогою STM32CubeProgrammer. Це одноразова операція: після успіху на платі є bootloader ArduPilot, і всі наступні оновлення робляться через GCS, як описано вище. На тій самій сторінці описано й плати, що працюють із зовнішньої flash, як-от серія SPRacing, — для них потрібна ще інша процедура.
+**Якщо його немає**, виконайте [Завантаження firmware на плати лише з ChibiOS](firmware-dfu.md). Bootloader і firmware ArduPilot завантажуються одним файлом і записуються разом через USB у режимі DFU за допомогою STM32CubeProgrammer. Це одноразова операція: після успіху на платі є bootloader ArduPilot, і всі наступні оновлення робляться через GCS, як описано вище. На тій самій сторінці описано й плати, що працюють із зовнішньої flash, як-от серія SPRacing, — для них потрібна ще інша процедура.
 
-> **Примітка.** Деякі autopilot з 1 MB flash не містять копії bootloader у своїй firmware, щоб заощадити місце. На таких платах сумісний bootloader встановлено, але оновити його з-під ArduPilot неможливо; див. [Оновлення bootloader](https://ardupilot.org/copter/docs/common-bootloader-update.html) *(ще не перекладено)*.
+> **Примітка.** Деякі autopilot з 1 MB flash не містять копії bootloader у своїй firmware, щоб заощадити місце. На таких платах сумісний bootloader встановлено, але оновити його з-під ArduPilot неможливо; див. [Оновлення bootloader](bootloader-update.md).
 
 ## Крок 4. Перевірте, що все спрацювало
 
@@ -94,7 +94,7 @@ ls /dev/cu.usbmodem*
 - перевірте версію firmware і тип апарата, які повідомляються при підключенні. У Mission Planner вони з'являються на вкладці **Messages** і в HUD, поки autopilot завантажується.
 - перейдіть на екран *Mission Planner Flight Data* і нахиліть плату. Положення в HUD має повторювати рух — це підтверджує, що firmware працює і зчитує IMU (інерційний вимірювальний модуль).
 
-Повідомлення pre-arm (передпольотна перевірка) на цьому етапі — нормальне явище для щойно прошитого autopilot: апарату ще потрібні калібрування [accelerometer (акселерометр)](accelerometer-calibration.md), [compass (компас)](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html) *(ще не перекладено)* і [радіокерування](https://ardupilot.org/copter/docs/common-radio-control-calibration.html) *(ще не перекладено)*, перш ніж його можна буде arm (переведення в робочий стан).
+Повідомлення pre-arm (передпольотна перевірка) на цьому етапі — нормальне явище для щойно прошитого autopilot: апарату ще потрібні калібрування [accelerometer (акселерометр)](accelerometer-calibration.md), [compass (компас)](compass-calibration.md) і [радіокерування](radio-calibration.md), перш ніж його можна буде arm (переведення в робочий стан).
 
 ## Додаткова інформація
 
@@ -112,7 +112,7 @@ Firmware для кожного підтримуваного autopilot публі
 
     - `arduXXX.apj` — лише firmware, для запису через GCS на плату, де вже є сумісний bootloader
     - `arduXXX_with_bl.hex` — bootloader і firmware разом, для запису через DFU на плату без сумісного bootloader
-    - `arduXXX.abin` — для [завантаження з SD-карти](https://ardupilot.org/copter/docs/common-install-sdcard.html) *(ще не перекладено)* на autopilot, що це підтримують
+    - `arduXXX.abin` — для [завантаження з SD-карти](firmware-sd-card.md) на autopilot, що це підтримують
     - `arduXXX.bin` — «сирий» бінарний файл, для `dfu-util` і для плат, що працюють із зовнішньої flash
 
 > **Примітка.** Деякі autopilot орієнтовані на певний тип апарата, і firmware для інших типів для них автоматично не збирається. Проте ArduPilot для цих апаратів можна зібрати на [Custom Firmware Build Server](https://custom.ardupilot.org/).
@@ -137,7 +137,7 @@ Firmware для кожного підтримуваного autopilot публі
 
 #### Власні збірки
 
-[Custom Firmware Build Server](https://custom.ardupilot.org) збирає firmware з вибраним вами набором функцій з гілок `stable`, `beta` або `latest`. Так можна ввімкнути функції, яких немає у випущеній firmware для autopilot з обмеженою flash, — ціною непотрібних вам функцій. Інструкції — у [Custom Firmware](https://ardupilot.org/copter/docs/common-custom-firmware.html) *(ще не перекладено)*, передумови — в розділі [Обмеження функцій firmware](#обмеження-функцій-firmware) нижче.
+[Custom Firmware Build Server](https://custom.ardupilot.org) збирає firmware з вибраним вами набором функцій з гілок `stable`, `beta` або `latest`. Так можна ввімкнути функції, яких немає у випущеній firmware для autopilot з обмеженою flash, — ціною непотрібних вам функцій. Інструкції — у [Custom Firmware](custom-firmware.md), передумови — в розділі [Обмеження функцій firmware](#обмеження-функцій-firmware) нижче.
 
 ### Конвертація параметрів
 
@@ -163,19 +163,19 @@ ArduPilot докладає зусиль, щоб оновлення firmware пр
 
 ### Завантаження firmware з SD-карти
 
-На деяких autopilot firmware можна оновити, скопіювавши файл `ardupilot.abin` на SD-карту і перезапустивши живлення плати. Це зручно, коли до USB-порту важко дістатися або оновлення треба доставити віддалено. Докладніше — [оновлення firmware з SD-карти](https://ardupilot.org/copter/docs/common-install-sdcard.html) *(ще не перекладено)*.
+На деяких autopilot firmware можна оновити, скопіювавши файл `ardupilot.abin` на SD-карту і перезапустивши живлення плати. Це зручно, коли до USB-порту важко дістатися або оновлення треба доставити віддалено. Докладніше — [оновлення firmware з SD-карти](firmware-sd-card.md).
 
 ### Обмеження функцій firmware
 
 Не кожна firmware autopilot містить усі функції ArduPilot. Зокрема, в autopilot з 1 MB flash деякі функції вилучено, щоб код помістився.
 
-- Перелік функцій, яких **немає** в поточній firmware «latest» для конкретного autopilot, — на [цій сторінці](https://ardupilot.org/copter/docs/binary-features.html) *(ще не перекладено)*. Точний перелік для конкретної плати і версії firmware — файл `features.txt` у каталозі цієї firmware на [сервері firmware](https://firmware.ardupilot.org/). Докладніше, зокрема про обмеження RAM, — [Limited Firmware](https://ardupilot.org/copter/docs/common-limited-firmware.html) *(ще не перекладено)*.
+- Перелік функцій, яких **немає** в поточній firmware «latest» для конкретного autopilot, — на [цій сторінці](https://ardupilot.org/copter/docs/binary-features.html) *(ще не перекладено)*. Точний перелік для конкретної плати і версії firmware — файл `features.txt` у каталозі цієї firmware на [сервері firmware](https://firmware.ardupilot.org/). Докладніше, зокрема про обмеження RAM, — [Limited Firmware](limited-firmware.md).
 - Кожну функцію, за замовчуванням вилучену з autopilot з 1 MB, можна вибрати на [Custom Firmware Build Server](https://custom.ardupilot.org). Багато функцій, які *є* за замовчуванням, можуть бути непотрібні для вашого застосування, тож власна збірка може додати деякі вилучені функції, відмовившись від непотрібних. Наприклад, відмова від підтримки QuadPlane звільняє місце на Plane, якому вона не потрібна. Драйвери і підтримку периферії можна вибирати окремо, щоб flash займали лише ті, що справді використовуються.
 - Custom build server вміє збирати зі щоденної гілки master, а також з гілок Stable і Beta.
 
 ## Підсторінки
 
-1. [Завантаження firmware на Pixhawk](https://ardupilot.org/copter/docs/common-loading-firmware-onto-pixhawk.html) *(ще не перекладено)*
-2. [Завантаження firmware на плати лише з ChibiOS](https://ardupilot.org/copter/docs/common-loading-firmware-onto-chibios-only-boards.html) *(ще не перекладено)*
-3. [Завантаження firmware з SD-карти](https://ardupilot.org/copter/docs/common-install-sdcard.html) *(ще не перекладено)*
-4. [Custom Firmware](https://ardupilot.org/copter/docs/common-custom-firmware.html) *(ще не перекладено)*
+1. [Завантаження firmware на Pixhawk](firmware-with-bootloader.md)
+2. [Завантаження firmware на плати лише з ChibiOS](firmware-dfu.md)
+3. [Завантаження firmware з SD-карти](firmware-sd-card.md)
+4. [Custom Firmware](custom-firmware.md)

@@ -56,11 +56,49 @@ nav:
   - Головна: index.md
   - Перше налаштування:
       - first-time-setup/index.md
-      - Встановлення GCS: first-time-setup/install-gcs.md
-      - Збирання системи autopilot: first-time-setup/autopilot-assembly.md
-      - Завантаження firmware: first-time-setup/loading-firmware.md
-      - Підключення Mission Planner: first-time-setup/connect-mission-planner.md
-      - Обов'язкова конфігурація: first-time-setup/mandatory-hardware.md
-      - Тип frame: first-time-setup/frame-type.md
-      - Калібрування accelerometer: first-time-setup/accelerometer-calibration.md
+      - Встановлення GCS:
+          - first-time-setup/install-gcs.md
+          - Вибір GCS: first-time-setup/choosing-gcs.md
+      - Збирання системи autopilot:
+          - first-time-setup/autopilot-assembly.md
+          - Монтаж autopilot: first-time-setup/mounting-autopilot.md
+          - Підключення autopilot: first-time-setup/autopilot-wiring.md
+          - Підключення ESC і моторів: first-time-setup/connect-escs-and-motors.md
+          - Модуль GPS + compass: first-time-setup/gps-compass-module.md
+          - Гасіння вібрацій: first-time-setup/vibration-damping.md
+          - Магнітні завади: first-time-setup/magnetic-interference.md
+      - Завантаження firmware:
+          - first-time-setup/loading-firmware.md
+          - На плати з bootloader: first-time-setup/firmware-with-bootloader.md
+          - На плати без bootloader (DFU): first-time-setup/firmware-dfu.md
+          - З SD-карти: first-time-setup/firmware-sd-card.md
+          - Custom Firmware Builder: first-time-setup/custom-firmware.md
+          - Оновлення bootloader: first-time-setup/bootloader-update.md
+          - Обмеження firmware: first-time-setup/limited-firmware.md
+      - Підключення Mission Planner:
+          - first-time-setup/connect-mission-planner.md
+          - Telemetry: first-time-setup/telemetry.md
+          - Bluetooth: first-time-setup/bluetooth.md
+          - MAVLink2 Signing: first-time-setup/mavlink-signing.md
+          - Значення світлодіодів: first-time-setup/leds-pixhawk.md
+          - Звуки (Pixhawk): first-time-setup/sounds-pixhawk.md
+      - Обов'язкова конфігурація:
+          - first-time-setup/mandatory-hardware.md
+          - Огляд системи: first-time-setup/basic-operation.md
+          - Тип frame:
+              - first-time-setup/frame-type.md
+              - Вибір frame: first-time-setup/choosing-a-frame.md
+              - Традиційні гелікоптери: first-time-setup/traditional-helicopters.md
+              - HeliQuads: first-time-setup/heliquads.md
+              - Tricopter: first-time-setup/tricopter.md
+              - SingleCopter і CoaxCopter: first-time-setup/singlecopter-and-coaxcopter.md
+          - Підключення ESC і моторів: first-time-setup/connect-escs-and-motors.md
+          - Калібрування радіокерування: first-time-setup/radio-calibration.md
+          - Калібрування accelerometer: first-time-setup/accelerometer-calibration.md
+          - Температурне калібрування IMU: first-time-setup/imu-temperature-calibration.md
+          - Калібрування compass: first-time-setup/compass-calibration.md
+          - Flight mode на RC transmitter: first-time-setup/flight-mode-switch.md
+          - Калібрування ESC: first-time-setup/esc-calibration.md
+          - Діапазон моторів: first-time-setup/set-motor-range.md
+          - Додаткове обладнання: first-time-setup/optional-hardware.md
   - Терміни: glossary.md
