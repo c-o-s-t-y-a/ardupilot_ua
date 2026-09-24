@@ -28,7 +28,7 @@ jobs:
       - name: Перевірка термінів
         run: find docs -name '*.md' ! -path docs/index.md ! -name glossary.md -print0 | xargs -0 python3 scripts/check-terms.py
       - name: Збірка сайту
-        run: mkdocs build --strict
+        run: mkdocs build --strict && python3 scripts/check-anchors.py
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

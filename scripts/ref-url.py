@@ -34,7 +34,13 @@ def translated():
     return out
 
 
+# мітки сторінок, які update.py генерує під час збірки вікі (їх немає в .rst)
+GENERATED = {"binary-features": ("binary-features", None), "all-features": ("binary-features", "all-features")}
+
+
 def find_label(label, wiki):
+    if label in GENERATED:
+        return GENERATED[label]
     pat = re.compile(rf"^\.\. _{re.escape(label)}:\s*$", re.M | re.I)
     for sub in WIKIS[wiki]:
         for f in sorted((UP / sub / "source" / "docs").glob("*.rst")):
@@ -59,7 +65,8 @@ def resolve(md_page, ref):
     done = translated()
     if wiki == "copter" and stem in done:
         rel = os.path.relpath(done[stem], Path(md_page).resolve().parent)
-        return rel + (f"#{anchor}" if anchor else "")
+        # у перекладі якір — slug українського заголовка, а не мітка RST
+        return rel + (f"#{anchor}  ⚠ якір перевірте: у перекладі slug заголовка інший" if anchor else "")
     site = "copter" if wiki in ("copter", "plane", "rover") else wiki
     return f"https://ardupilot.org/{site}/docs/{stem}.html" + (f"#{anchor}" if anchor else "") + "  *(ще не перекладено)*"
 
