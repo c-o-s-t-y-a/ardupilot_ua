@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 UP = ROOT / ".upstream"
 WIKIS = {"copter": ["copter", "common"], "planner": ["planner", "common"],
-         "planner2": ["planner2", "common"], "plane": ["common"], "rover": ["common"]}
+         "planner2": ["planner2", "common"], "plane": ["plane", "common"], "rover": ["common"]}
 
 
 def make_id(label):

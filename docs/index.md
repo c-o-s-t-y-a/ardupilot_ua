@@ -66,6 +66,28 @@
         - [Crash check](safety/crash-check.md)
         - [Парашут](safety/parachute.md)
         - [Watchdog і crash dump](safety/watchdog.md)
+- [FPV](fpv/index.md)
+    1. Режими польоту FPV
+        - [Acro](fpv/acro-mode.md)
+        - [AirMode](fpv/airmode.md)
+        - [Turtle](fpv/turtle-mode.md)
+        - [Flip](fpv/flip-mode.md)
+    2. ESC
+        - [PWM, OneShot, OneShot125](fpv/esc-pwm.md)
+        - [DShot](fpv/dshot.md)
+        - [BLHeli32, AM32, BLHeli_S](fpv/blheli.md)
+        - [ESC telemetry](fpv/esc-telemetry.md)
+    3. Радіокерування
+        - [Системи радіокерування](fpv/rc-systems.md)
+        - [Crossfire і ELRS](fpv/crossfire-elrs.md)
+        - [TBS Crossfire telemetry](fpv/crsf-telemetry.md)
+        - [FPort](fpv/fport.md)
+    4. Відео
+        - [OSD](fpv/osd.md)
+        - [MSP OSD](fpv/msp-osd.md)
+        - [VTX](fpv/vtx.md)
+        - [HD-відео](fpv/hd-video.md)
+        - [RunCam](fpv/runcam.md)
 - [Терміни](glossary.md)
 
 ## Ліцензія

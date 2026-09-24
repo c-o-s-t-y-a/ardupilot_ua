@@ -57,3 +57,21 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-watchdog | [Independent watchdog і crash dump (незалежний сторожовий таймер і дамп збою)](docs/safety/watchdog.md) | `common/source/docs/common-watchdog.rst` | `3e653161c0fb` | 2026-09-24 |
 | common-parachute | [Парашут](docs/safety/parachute.md) | `common/source/docs/common-parachute.rst` | `668e6f10a41d` | 2026-09-24 |
 | terrain-following | [Terrain following (політ за рельєфом в Auto, Guided тощо)](docs/safety/terrain-following.md) | `copter/source/docs/terrain-following.rst` | `0efd6f201080` | 2026-09-24 |
+| common-fpv-first-person-view | [FPV (вигляд від першої особи)](docs/fpv/index.md) | `common/source/docs/common-fpv-first-person-view.rst` | `f268623fa394` | 2026-09-24 |
+| acro-mode | [Acro mode (акро-режим)](docs/fpv/acro-mode.md) | `copter/source/docs/acro-mode.rst` | `77a9a41093b1` | 2026-09-24 |
+| airmode | [AirMode](docs/fpv/airmode.md) | `copter/source/docs/airmode.rst` | `a950442a105d` | 2026-09-24 |
+| turtle-mode | [Turtle mode (перевертання після падіння)](docs/fpv/turtle-mode.md) | `copter/source/docs/turtle-mode.rst` | `39349eb7b659` | 2026-09-24 |
+| flip-mode | [Flip mode (фліп)](docs/fpv/flip-mode.md) | `copter/source/docs/flip-mode.rst` | `69ee15a244d3` | 2026-09-24 |
+| common-brushless-escs | [ESC з PWM, OneShot і OneShot125](docs/fpv/esc-pwm.md) | `common/source/docs/common-brushless-escs.rst` | `39349eb7b659` | 2026-09-24 |
+| common-dshot-escs | [DShot ESC](docs/fpv/dshot.md) | `common/source/docs/common-dshot-escs.rst` | `9404abeaf113` | 2026-09-24 |
+| common-blheli32-passthru | [ESC з BLHeli32, AM32 і BLHeli_S](docs/fpv/blheli.md) | `common/source/docs/common-blheli32-passthru.rst` | `52a82df17f73` | 2026-09-24 |
+| common-esc-telemetry | [ESC telemetry (телеметрія регуляторів обертів)](docs/fpv/esc-telemetry.md) | `common/source/docs/common-esc-telemetry.rst` | `39349eb7b659` | 2026-09-24 |
+| common-rc-systems | [Системи радіокерування](docs/fpv/rc-systems.md) | `common/source/docs/common-rc-systems.rst` | `7b62a1629361` | 2026-09-24 |
+| common-tbs-rc | [Системи радіокерування Crossfire і ELRS](docs/fpv/crossfire-elrs.md) | `common/source/docs/common-tbs-rc.rst` | `adff11ce975c` | 2026-09-24 |
+| common-crsf-telemetry | [TBS Crossfire telemetry (телеметрія)](docs/fpv/crsf-telemetry.md) | `common/source/docs/common-crsf-telemetry.rst` | `2fe522fe4cca` | 2026-09-24 |
+| common-FPort-receivers | [Receiver FPort](docs/fpv/fport.md) | `common/source/docs/common-FPort-receivers.rst` | `d3eef1119d79` | 2026-09-24 |
+| common-osd-overview | [OSD (накладення даних на відео)](docs/fpv/osd.md) | `common/source/docs/common-osd-overview.rst` | `068ccd0ad534` | 2026-09-24 |
+| common-msp-osd-overview-4.2 | [MSP OSD](docs/fpv/msp-osd.md) | `common/source/docs/common-msp-osd-overview-4.2.rst` | `39349eb7b659` | 2026-09-24 |
+| common-vtx | [Підтримка VTX (відеопередавач)](docs/fpv/vtx.md) | `common/source/docs/common-vtx.rst` | `39349eb7b659` | 2026-09-24 |
+| common-video-landingpage | [Системи HD-відео для FPV](docs/fpv/hd-video.md) | `common/source/docs/common-video-landingpage.rst` | `47f488827b21` | 2026-09-24 |
+| common-camera-runcam | [Підтримка камер RunCam](docs/fpv/runcam.md) | `common/source/docs/common-camera-runcam.rst` | `2e132155deb9` | 2026-09-24 |

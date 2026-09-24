@@ -33,7 +33,7 @@ Copter/Plane/Rover/Blimp можуть обмінюватися інформац�
 1. [Andruav Android Cellular](https://cloud.ardupilot.org/andruav-index.html)
 2. [Blicube RLINK P900](https://ardupilot.org/copter/docs/common-blicube-rlink.html) *(ще не перекладено)*
 3. [ClearSky Airlink 4G LTE Telemetry](https://ardupilot.org/copter/docs/common-airlink-telemetry.html) *(ще не перекладено)*
-4. [CRSF/ELRS Telemetry](https://ardupilot.org/copter/docs/common-crsf-telemetry.html) *(ще не перекладено)*
+4. [CRSF/ELRS Telemetry](../fpv/crsf-telemetry.md)
 5. [CUAV P8 Radio](https://ardupilot.org/copter/docs/common-cuav-p8.html) *(ще не перекладено)*
 6. [CUAV P9 Radio](https://ardupilot.org/copter/docs/common-cuav-p9.html) *(ще не перекладено)*
 7. [DragonLink](https://ardupilot.org/copter/docs/common-dragonlink-rc.html) *(ще не перекладено)*

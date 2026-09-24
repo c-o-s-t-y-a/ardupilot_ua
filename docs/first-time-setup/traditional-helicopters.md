@@ -9,7 +9,7 @@ Copter підтримує традиційні гелікоптери з одн�
 
 ---
 
-Демонстрація реального комерційного польоту гелікоптера Trex 600 під керуванням ArduPilot, з додатковою RC-telemetry (телеметрія) і FPV: [відео (YouTube)](https://www.youtube.com/watch?v=FWTb2-sdNW8).
+Демонстрація реального комерційного польоту гелікоптера Trex 600 під керуванням ArduPilot, з додатковою RC-telemetry (телеметрія) і FPV (вигляд від першої особи): [відео (YouTube)](https://www.youtube.com/watch?v=FWTb2-sdNW8).
 
 ---
 
