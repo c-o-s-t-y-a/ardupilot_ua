@@ -12,9 +12,9 @@
 назви UI (**Calibrate Level**), URL-и посилань і картинок, рядок «> Оригінал:».
 
 Виняток за змістом: коментар «<!-- terms-ignore: UART, bind -->» у рядку перед
-абзацом вимикає правило 3 для цих термінів у наступному абзаці (до порожнього
-рядка) — коли українське слово там означає інше (напр. послідовний порт
-комп'ютера, а не UART autopilot).
+абзацом вимикає всі правила для цих термінів у наступному абзаці (до порожнього
+рядка) — коли слово там означає інше (послідовний порт комп'ютера, а не UART
+autopilot; collective pitch — крок лопатей, а не тангаж апарата).
 """
 import re
 import sys
@@ -105,6 +105,8 @@ def check(path, terms):
             if suffix and suffix.group(0) not in ALLOWED_SUFFIXES:
                 out.append(f"{lineno(m.start())}: суфікс «{m.group(0)}» — дозволено лише -и/-ах")
         for m in en_pattern(en).finditer(body):
+            if is_ignored(en, m.start()):
+                continue
             after = body[m.end():]
             glossed = re.match(r"\s*\(([^()\n]*)\)", after)
             if first:

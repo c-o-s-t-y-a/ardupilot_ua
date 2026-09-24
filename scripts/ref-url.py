@@ -59,6 +59,9 @@ def resolve(md_page, ref):
     wiki = wiki or "copter"
     if re.fullmatch(r"[A-Z][A-Z0-9_]*", label):
         return f"`{label}`"
+    if wiki not in WIKIS:
+        # джерел цієї вікі (dev, mavproxy…) немає в .upstream — не вгадуємо адресу
+        return f"https://ardupilot.org/{wiki}/" if label == "home" else f"?? мітка {ref}: вікі {wiki} не клоновано"
     stem, anchor = find_label(label, wiki)
     if stem is None:
         return f"?? мітку {ref} не знайдено"
