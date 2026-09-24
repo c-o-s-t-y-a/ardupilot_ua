@@ -23,8 +23,15 @@
   3. [Завантаження firmware](docs/first-time-setup/loading-firmware.md)
   4. [Підключення Mission Planner до autopilot](docs/first-time-setup/connect-mission-planner.md)
   5. [Обов'язкова конфігурація обладнання](docs/first-time-setup/mandatory-hardware.md)
+     - [Огляд системи](docs/first-time-setup/basic-operation.md)
      - [Тип frame](docs/first-time-setup/frame-type.md)
+     - [Підключення ESC і моторів](docs/first-time-setup/connect-escs-and-motors.md)
+     - [Калібрування радіокерування](docs/first-time-setup/radio-calibration.md)
      - [Калібрування accelerometer](docs/first-time-setup/accelerometer-calibration.md)
+     - [Калібрування compass](docs/first-time-setup/compass-calibration.md)
+     - [Flight mode на RC transmitter](docs/first-time-setup/flight-mode-switch.md)
+     - [Калібрування ESC](docs/first-time-setup/esc-calibration.md)
+     - [Діапазон моторів](docs/first-time-setup/set-motor-range.md)
 - [Терміни](docs/glossary.md)
 
 ## Для перекладачів

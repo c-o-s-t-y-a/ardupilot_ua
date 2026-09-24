@@ -13,3 +13,10 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | configuring-hardware | [Обов'язкова конфігурація обладнання](docs/first-time-setup/mandatory-hardware.md) | `copter/source/docs/configuring-hardware.rst` | `502b03c0b173` | 2026-09-24 |
 | frame-type-configuration | [Frame class and type (клас і тип рами)](docs/first-time-setup/frame-type.md) | `copter/source/docs/frame-type-configuration.rst` | `7c8a4fe85c3f` | 2026-09-24 |
 | common-accelerometer-calibration | [Accelerometer calibration (калібрування акселерометра)](docs/first-time-setup/accelerometer-calibration.md) | `common/source/docs/common-accelerometer-calibration.rst` | `0eb5e613e714` | 2026-09-24 |
+| common-basic-operation | [Простий огляд роботи ArduPilot](docs/first-time-setup/basic-operation.md) | `common/source/docs/common-basic-operation.rst` | `c2be204416b0` | 2026-09-24 |
+| connect-escs-and-motors | [Підключення ESC і моторів](docs/first-time-setup/connect-escs-and-motors.md) | `copter/source/docs/connect-escs-and-motors.rst` | `6609b4fe8139` | 2026-09-24 |
+| common-radio-control-calibration | [Калібрування радіокерування](docs/first-time-setup/radio-calibration.md) | `common/source/docs/common-radio-control-calibration.rst` | `068ccd0ad534` | 2026-09-24 |
+| common-compass-calibration-in-mission-planner | [Compass calibration (калібрування компаса)](docs/first-time-setup/compass-calibration.md) | `common/source/docs/common-compass-calibration-in-mission-planner.rst` | `b4fee526763a` | 2026-09-24 |
+| common-rc-transmitter-flight-mode-configuration | [Налаштування flight mode (польотних режимів) на RC transmitter](docs/first-time-setup/flight-mode-switch.md) | `common/source/docs/common-rc-transmitter-flight-mode-configuration.rst` | `fb0b061c8175` | 2026-09-24 |
+| esc-calibration | [ESC calibration (калібрування електронних регуляторів обертів)](docs/first-time-setup/esc-calibration.md) | `copter/source/docs/esc-calibration.rst` | `39349eb7b659` | 2026-09-24 |
+| set-motor-range | [Діапазон моторів](docs/first-time-setup/set-motor-range.md) | `copter/source/docs/set-motor-range.rst` | `20ecaff3333b` | 2026-09-24 |

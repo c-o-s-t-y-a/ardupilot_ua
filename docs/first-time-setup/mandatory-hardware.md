@@ -6,15 +6,15 @@
 
 Крім обов'язкового калібрування, можна [налаштувати додаткове обладнання](https://ardupilot.org/copter/docs/common-optional-hardware.html) *(ще не перекладено)*: монітор батареї, сонар, датчик повітряної швидкості, optical flow, OSD, підвіс камери, антенний трекер тощо.
 
-1. [Огляд системи](https://ardupilot.org/copter/docs/common-basic-operation.html) *(ще не перекладено)*
+1. [Огляд системи](basic-operation.md)
 2. [Тип frame](frame-type.md)
-3. [Нумерація і напрямок обертання моторів](https://ardupilot.org/copter/docs/connect-escs-and-motors.html) *(ще не перекладено)*
-4. [Калібрування радіокерування](https://ardupilot.org/copter/docs/common-radio-control-calibration.html) *(ще не перекладено)*
+3. [Нумерація і напрямок обертання моторів](connect-escs-and-motors.md)
+4. [Калібрування радіокерування](radio-calibration.md)
 5. [Калібрування accelerometer](accelerometer-calibration.md)
-6. [Калібрування compass](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html) *(ще не перекладено)*
-7. [Налаштування flight mode (польотний режим) на RC transmitter](https://ardupilot.org/copter/docs/common-rc-transmitter-flight-mode-configuration.html) *(ще не перекладено)*
-8. [Калібрування ESC](https://ardupilot.org/copter/docs/esc-calibration.html) *(ще не перекладено)*
-9. [Діапазон моторів (необов'язково)](https://ardupilot.org/copter/docs/set-motor-range.html) *(ще не перекладено)*
+6. [Калібрування compass](compass-calibration.md)
+7. [Налаштування flight mode (польотний режим) на RC transmitter](flight-mode-switch.md)
+8. [Калібрування ESC](esc-calibration.md)
+9. [Діапазон моторів (необов'язково)](set-motor-range.md)
 10. [Механізми failsafe (аварійний захист)](https://ardupilot.org/copter/docs/failsafe-landing-page.html) *(ще не перекладено)*
 11. [Flight mode-и](https://ardupilot.org/copter/docs/flight-modes.html) *(ще не перекладено)*
 

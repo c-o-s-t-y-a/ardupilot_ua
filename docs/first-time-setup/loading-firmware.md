@@ -94,7 +94,7 @@ ls /dev/cu.usbmodem*
 - перевірте версію firmware і тип апарата, які повідомляються при підключенні. У Mission Planner вони з'являються на вкладці **Messages** і в HUD, поки autopilot завантажується.
 - перейдіть на екран *Mission Planner Flight Data* і нахиліть плату. Положення в HUD має повторювати рух — це підтверджує, що firmware працює і зчитує IMU (інерційний вимірювальний модуль).
 
-Повідомлення pre-arm (передпольотна перевірка) на цьому етапі — нормальне явище для щойно прошитого autopilot: апарату ще потрібні калібрування [accelerometer (акселерометр)](accelerometer-calibration.md), [compass (компас)](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html) *(ще не перекладено)* і [радіокерування](https://ardupilot.org/copter/docs/common-radio-control-calibration.html) *(ще не перекладено)*, перш ніж його можна буде arm (переведення в робочий стан).
+Повідомлення pre-arm (передпольотна перевірка) на цьому етапі — нормальне явище для щойно прошитого autopilot: апарату ще потрібні калібрування [accelerometer (акселерометр)](accelerometer-calibration.md), [compass (компас)](compass-calibration.md) і [радіокерування](radio-calibration.md), перш ніж його можна буде arm (переведення в робочий стан).
 
 ## Додаткова інформація
 
