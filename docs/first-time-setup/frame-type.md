@@ -1,32 +1,34 @@
-# Клас і тип рами
+# Frame class and type (клас і тип рами)
 
 > Оригінал: [Frame Class and Type Configuration](https://ardupilot.org/copter/docs/frame-type-configuration.html)
 
 ## Мультикоптери
 
-Параметри `FRAME_CLASS` і `FRAME_TYPE` мають відповідати фізичній рамі. Список підтримуваних рам — на сторінці [Підключення ESC і моторів](https://ardupilot.org/copter/docs/connect-escs-and-motors.html).
+Параметри `FRAME_CLASS` і `FRAME_TYPE` мають відповідати фізичній frame (рама), яку ви використовуєте. Перелік підтримуваних frame мультикоптерів — на сторінці [Підключення ESC (електронний регулятор обертів) і моторів](https://ardupilot.org/copter/docs/connect-escs-and-motors.html) *(ще не перекладено)*.
 
-У Mission Planner: **Initial Setup → Mandatory Hardware → Frame Type**. В іншій наземній станції `FRAME_CLASS` і `FRAME_TYPE` можна задати напряму через екран параметрів.
+У Mission Planner виберіть Initial Setup, **Mandatory Hardware → Frame Type**. В іншій GCS (наземна станція керування) параметри `FRAME_CLASS` і `FRAME_TYPE` можна задати напряму на екрані редагування параметрів.
 
-![Вибір типу рами в Mission Planner](https://ardupilot.org/copter/_images/MissionPlanner_Select_Frame-Type.jpg)
+![MissionPlanner_Select_Frame-Type](https://ardupilot.org/copter/_images/MissionPlanner_Select_Frame-Type.jpg)
 
-> **Примітка.** Для традиційних гелікоптерів уже має бути вибрано «Heli» — не змінюйте. Для [Single Copter і Coax Copter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html) `FRAME_CLASS` задавайте напряму через Full Parameter List, доки не виправлено [цю проблему](https://github.com/ArduPilot/MissionPlanner/issues/1552).
+> **Примітка.** Для традиційних гелікоптерів уже має бути вибрано «Heli» — не змінюйте цього. Для [Single Copter і Coax Copter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html) *(ще не перекладено)* параметр `FRAME_CLASS` задавайте напряму через Full Parameter List, доки не виправлено [цю проблему](https://github.com/ArduPilot/MissionPlanner/issues/1552).
 
-Далі оберіть **Type** рами. За замовчуванням — **X**.
+Далі виберіть «Type» frame для вашого апарата. За замовчуванням — **X**.
 
-Для трикоптерів, Y6, традиційних гелікоптерів, бікоптерів, SingleCopter і CoaxCopter тип рами ігнорується.
+Для трикоптерів, Y6, традиційних гелікоптерів, бікоптерів, SingleCopter і CoaxCopter тип frame ігнорується.
 
 ### Схеми порядку моторів
 
-Див. [Підключення ESC і моторів](https://ardupilot.org/copter/docs/connect-escs-and-motors.html).
+Перелік підтримуваних frame мультикоптерів — на сторінці [Підключення ESC і моторів](https://ardupilot.org/copter/docs/connect-escs-and-motors.html) *(ще не перекладено)*.
 
 ## Традиційні гелікоптери
 
-Традиційні гелікоптери використовують окрему прошивку. Налаштування і тюнінг — у розділі [Traditional Helicopters](https://ardupilot.org/copter/docs/traditional-helicopters.html).
+Традиційні гелікоптери використовують окрему версію firmware (прошивка). Налаштування і tuning (точне налаштування) — у розділі [Traditional Helicopters](https://ardupilot.org/copter/docs/traditional-helicopters.html) *(ще не перекладено)*.
 
-HeliQuad — гібридна рама на прошивці традиційного гелікоптера, але з чотирма моторами: [HeliQuads](https://ardupilot.org/copter/docs/heliquads.html).
+HeliQuad — гібридна frame на firmware традиційного гелікоптера, але з чотирма моторами.
+
+1. [HeliQuads](https://ardupilot.org/copter/docs/heliquads.html) *(ще не перекладено)*
 
 ## Інші конфігурації
 
-- [Tricopter](https://ardupilot.org/copter/docs/tricopter.html)
-- [SingleCopter і CoaxCopter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html)
+1. [Tricopter](https://ardupilot.org/copter/docs/tricopter.html) *(ще не перекладено)*
+2. [SingleCopter і CoaxCopter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html) *(ще не перекладено)*
