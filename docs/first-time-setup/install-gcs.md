@@ -2,7 +2,7 @@
 
 > Оригінал: [Installing Ground Station (GCS) software](https://ardupilot.org/copter/docs/common-install-gcs.html)
 
-ArduPilot працює з [багатьма різними GCS (наземна станція керування)](https://ardupilot.org/copter/docs/common-choosing-a-ground-station.html) *(ще не перекладено)*.
+ArduPilot працює з [багатьма різними GCS (наземна станція керування)](choosing-gcs.md).
 
 Розробники зазвичай користуються *настільними* GCS: вони дають глибший доступ до параметрів налаштування апарата і розширені засоби налагодження. Якщо ви хочете просто літати, можна обрати GCS для мобільної ОС (iOS, Android).
 

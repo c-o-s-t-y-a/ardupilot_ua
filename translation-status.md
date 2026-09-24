@@ -31,3 +31,9 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-installing-3dr-ublox-gps-compass-module | [Модуль UBlox GPS + compass (компас)](docs/first-time-setup/gps-compass-module.md) | `common/source/docs/common-installing-3dr-ublox-gps-compass-module.rst` | `d3eef1119d79` | 2026-09-24 |
 | common-vibration-damping | [Гасіння вібрацій](docs/first-time-setup/vibration-damping.md) | `common/source/docs/common-vibration-damping.rst` | `7701c0ed8ad4` | 2026-09-24 |
 | common-magnetic-interference | [Магнітні завади](docs/first-time-setup/magnetic-interference.md) | `common/source/docs/common-magnetic-interference.rst` | `13db7d3f029f` | 2026-09-24 |
+| common-choosing-a-ground-station | [Вибір GCS (наземної станції керування)](docs/first-time-setup/choosing-gcs.md) | `common/source/docs/common-choosing-a-ground-station.rst` | `209e532bc97e` | 2026-09-24 |
+| common-telemetry-landingpage | [Telemetry (телеметрія)](docs/first-time-setup/telemetry.md) | `common/source/docs/common-telemetry-landingpage.rst` | `e03a1fd33ec9` | 2026-09-24 |
+| common-mission-planner-bluetooth-connectivity | [Bluetooth-модем telemetry (телеметрії)](docs/first-time-setup/bluetooth.md) | `common/source/docs/common-mission-planner-bluetooth-connectivity.rst` | `50df5afbb5d8` | 2026-09-24 |
+| common-MAVLink2-signing | [MAVLink2 Signing (підписування пакетів MAVLink2)](docs/first-time-setup/mavlink-signing.md) | `common/source/docs/common-MAVLink2-signing.rst` | `8cdf622331ac` | 2026-09-24 |
+| common-leds-pixhawk | [Значення світлодіодів](docs/first-time-setup/leds-pixhawk.md) | `common/source/docs/common-leds-pixhawk.rst` | `d3eef1119d79` | 2026-09-24 |
+| common-sounds-pixhawkpx4 | [Звуки (Pixhawk)](docs/first-time-setup/sounds-pixhawk.md) | `common/source/docs/common-sounds-pixhawkpx4.rst` | `d3eef1119d79` | 2026-09-24 |

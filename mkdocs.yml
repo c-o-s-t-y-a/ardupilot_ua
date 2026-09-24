@@ -56,7 +56,9 @@ nav:
   - Головна: index.md
   - Перше налаштування:
       - first-time-setup/index.md
-      - Встановлення GCS: first-time-setup/install-gcs.md
+      - Встановлення GCS:
+          - first-time-setup/install-gcs.md
+          - Вибір GCS: first-time-setup/choosing-gcs.md
       - Збирання системи autopilot:
           - first-time-setup/autopilot-assembly.md
           - Монтаж autopilot: first-time-setup/mounting-autopilot.md
@@ -73,7 +75,13 @@ nav:
           - Custom Firmware Builder: first-time-setup/custom-firmware.md
           - Оновлення bootloader: first-time-setup/bootloader-update.md
           - Обмеження firmware: first-time-setup/limited-firmware.md
-      - Підключення Mission Planner: first-time-setup/connect-mission-planner.md
+      - Підключення Mission Planner:
+          - first-time-setup/connect-mission-planner.md
+          - Telemetry: first-time-setup/telemetry.md
+          - Bluetooth: first-time-setup/bluetooth.md
+          - MAVLink2 Signing: first-time-setup/mavlink-signing.md
+          - Значення світлодіодів: first-time-setup/leds-pixhawk.md
+          - Звуки (Pixhawk): first-time-setup/sounds-pixhawk.md
       - Обов'язкова конфігурація:
           - first-time-setup/mandatory-hardware.md
           - Огляд системи: first-time-setup/basic-operation.md
