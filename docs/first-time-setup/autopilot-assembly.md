@@ -2,7 +2,7 @@
 
 > Оригінал: [Autopilot System Assembly Instructions](https://ardupilot.org/copter/docs/autopilot-assembly-instructions.html)
 
-Тут зібрано інструкції зі збирання «основних компонентів» Copter на Pixhawk та інших autopilot (автопілот). Підключення іншого обладнання описано в розділі [Додаткове обладнання](https://ardupilot.org/copter/docs/common-optional-hardware.html) *(ще не перекладено)*.
+Тут зібрано інструкції зі збирання «основних компонентів» Copter на Pixhawk та інших autopilot (автопілот). Підключення іншого обладнання описано в розділі [Додаткове обладнання](optional-hardware.md).
 
 1. [Монтаж autopilot](mounting-autopilot.md)
 2. [Підключення autopilot](autopilot-wiring.md)

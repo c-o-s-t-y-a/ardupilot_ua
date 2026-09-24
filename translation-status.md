@@ -37,3 +37,10 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-MAVLink2-signing | [MAVLink2 Signing (підписування пакетів MAVLink2)](docs/first-time-setup/mavlink-signing.md) | `common/source/docs/common-MAVLink2-signing.rst` | `8cdf622331ac` | 2026-09-24 |
 | common-leds-pixhawk | [Значення світлодіодів](docs/first-time-setup/leds-pixhawk.md) | `common/source/docs/common-leds-pixhawk.rst` | `d3eef1119d79` | 2026-09-24 |
 | common-sounds-pixhawkpx4 | [Звуки (Pixhawk)](docs/first-time-setup/sounds-pixhawk.md) | `common/source/docs/common-sounds-pixhawkpx4.rst` | `d3eef1119d79` | 2026-09-24 |
+| choosing-a-frame | [Вибір frame (рами) мультикоптера](docs/first-time-setup/choosing-a-frame.md) | `copter/source/docs/choosing-a-frame.rst` | `6b4aabff14ec` | 2026-09-24 |
+| traditional-helicopters | [Традиційні гелікоптери](docs/first-time-setup/traditional-helicopters.md) | `copter/source/docs/traditional-helicopters.rst` | `cb3eb61571b9` | 2026-09-24 |
+| heliquads | [HeliQuads (мультикоптери зі змінним кроком гвинтів)](docs/first-time-setup/heliquads.md) | `copter/source/docs/heliquads.rst` | `1e63fb576d70` | 2026-09-24 |
+| tricopter | [Налаштування трикоптера](docs/first-time-setup/tricopter.md) | `copter/source/docs/tricopter.rst` | `4da5ffc92e09` | 2026-09-24 |
+| singlecopter-and-coaxcopter | [SingleCopter і CoaxCopter](docs/first-time-setup/singlecopter-and-coaxcopter.md) | `copter/source/docs/singlecopter-and-coaxcopter.rst` | `4bf8636c413a` | 2026-09-24 |
+| common-imutempcal | [IMU temperature calibration (температурне калібрування IMU)](docs/first-time-setup/imu-temperature-calibration.md) | `common/source/docs/common-imutempcal.rst` | `861250cc74bf` | 2026-09-24 |
+| common-optional-hardware | [Додаткове обладнання](docs/first-time-setup/optional-hardware.md) | `common/source/docs/common-optional-hardware.rst` | `6071514591e2` | 2026-09-24 |

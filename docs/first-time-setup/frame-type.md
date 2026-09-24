@@ -10,7 +10,7 @@
 
 ![MissionPlanner_Select_Frame-Type](https://ardupilot.org/copter/_images/MissionPlanner_Select_Frame-Type.jpg)
 
-> **Примітка.** Для традиційних гелікоптерів уже має бути вибрано «Heli» — не змінюйте цього. Для [Single Copter і Coax Copter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html) *(ще не перекладено)* параметр `FRAME_CLASS` задавайте напряму через Full Parameter List, доки не виправлено [цю проблему](https://github.com/ArduPilot/MissionPlanner/issues/1552).
+> **Примітка.** Для традиційних гелікоптерів уже має бути вибрано «Heli» — не змінюйте цього. Для [Single Copter і Coax Copter](singlecopter-and-coaxcopter.md) параметр `FRAME_CLASS` задавайте напряму через Full Parameter List, доки не виправлено [цю проблему](https://github.com/ArduPilot/MissionPlanner/issues/1552).
 
 Далі виберіть «Type» frame для вашого апарата. За замовчуванням — **X**.
 
@@ -22,13 +22,13 @@
 
 ## Традиційні гелікоптери
 
-Традиційні гелікоптери використовують окрему версію firmware (прошивка). Налаштування і tuning (точне налаштування) — у розділі [Traditional Helicopters](https://ardupilot.org/copter/docs/traditional-helicopters.html) *(ще не перекладено)*.
+Традиційні гелікоптери використовують окрему версію firmware (прошивка). Налаштування і tuning (точне налаштування) — у розділі [Traditional Helicopters](traditional-helicopters.md).
 
 HeliQuad — гібридна frame на firmware традиційного гелікоптера, але з чотирма моторами.
 
-1. [HeliQuads](https://ardupilot.org/copter/docs/heliquads.html) *(ще не перекладено)*
+1. [HeliQuads](heliquads.md)
 
 ## Інші конфігурації
 
-1. [Tricopter](https://ardupilot.org/copter/docs/tricopter.html) *(ще не перекладено)*
-2. [SingleCopter і CoaxCopter](https://ardupilot.org/copter/docs/singlecopter-and-coaxcopter.html) *(ще не перекладено)*
+1. [Tricopter](tricopter.md)
+2. [SingleCopter і CoaxCopter](singlecopter-and-coaxcopter.md)
