@@ -1,0 +1,66 @@
+site_name: ArduPilot Copter українською
+site_description: Неофіційний український переклад документації ArduPilot Copter
+site_url: https://c-o-s-t-y-a.github.io/ardupilot_ua/
+repo_url: https://github.com/c-o-s-t-y-a/ardupilot_ua
+repo_name: c-o-s-t-y-a/ardupilot_ua
+edit_uri: edit/main/docs/
+copyright: Переклад документації ArduPilot · CC BY-SA 3.0
+
+theme:
+  name: material
+  language: uk
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle: {icon: material/weather-night, name: Темна тема}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle: {icon: material/weather-sunny, name: Світла тема}
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.tooltips
+    - content.action.edit
+    - toc.follow
+
+plugins:
+  - search:
+      # Для української в lunr немає stemmer-а; en не зачіпає кирилицю,
+      # а дефіс як роздільник дає знаходити «accelerometer» у «accelerometer-и».
+      lang: en
+      separator: '[\s\-\(\)«»,.:;!?]+'
+
+hooks:
+  - hooks/glossary_abbr.py
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+
+nav:
+  - Головна: index.md
+  - Перше налаштування:
+      - first-time-setup/index.md
+      - Встановлення GCS: first-time-setup/install-gcs.md
+      - Збирання системи autopilot: first-time-setup/autopilot-assembly.md
+      - Завантаження firmware: first-time-setup/loading-firmware.md
+      - Підключення Mission Planner: first-time-setup/connect-mission-planner.md
+      - Обов'язкова конфігурація: first-time-setup/mandatory-hardware.md
+      - Тип frame: first-time-setup/frame-type.md
+      - Калібрування accelerometer: first-time-setup/accelerometer-calibration.md
+  - Терміни: glossary.md
