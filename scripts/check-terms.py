@@ -103,7 +103,7 @@ def check(path, terms):
                 out.append(f"{lineno(m.start())}: українська форма «{m.group(0)}» без EN (має бути «{en}»)")
 
     for pat in TRANSLIT:
-        for m in re.finditer(rf"(?<![\w]){pat}", text, re.I):
+        for m in re.finditer(rf"(?<![\w]){pat}(?![\w])", text, re.I):
             out.append(f"{lineno(m.start())}: транслітерація «{m.group(0)}»")
 
     for m in re.finditer(r":ref:|^\.\. |\[/?site|\[copywiki", raw, re.M):
