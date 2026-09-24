@@ -34,7 +34,7 @@
 25. [Навігація без GPS](https://ardupilot.org/copter/docs/common-non-gps-navigation-landing-page.html) *(ще не перекладено)*
 26. [Екранне меню (OSD)](https://ardupilot.org/copter/docs/common-osd-boards-on-screen-display.html) *(ще не перекладено)*
 27. [Датчик оптичного потоку (Optical Flow)](https://ardupilot.org/copter/docs/common-optical-flow-sensors-landingpage.html) *(ще не перекладено)*
-28. [Парашут](https://ardupilot.org/copter/docs/common-parachute.html) *(ще не перекладено)*
+28. [Парашут](../safety/parachute.md)
 29. [Power module (модуль живлення)](https://ardupilot.org/copter/docs/common-powermodule-landingpage.html) *(ще не перекладено)*
 30. [Живлення по кабелю-прив'язі (Power Tether)](https://ardupilot.org/copter/docs/common-power-tether.html) *(ще не перекладено)*
 31. [Кодер PPM](https://ardupilot.org/copter/docs/common-ppm-encoders-new.html) *(ще не перекладено)*

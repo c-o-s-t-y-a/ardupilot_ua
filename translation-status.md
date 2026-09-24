@@ -44,3 +44,16 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | singlecopter-and-coaxcopter | [SingleCopter і CoaxCopter](docs/first-time-setup/singlecopter-and-coaxcopter.md) | `copter/source/docs/singlecopter-and-coaxcopter.rst` | `4bf8636c413a` | 2026-09-24 |
 | common-imutempcal | [IMU temperature calibration (температурне калібрування IMU)](docs/first-time-setup/imu-temperature-calibration.md) | `common/source/docs/common-imutempcal.rst` | `861250cc74bf` | 2026-09-24 |
 | common-optional-hardware | [Додаткове обладнання](docs/first-time-setup/optional-hardware.md) | `common/source/docs/common-optional-hardware.rst` | `6071514591e2` | 2026-09-24 |
+| arming_the_motors | [Arming the motors (переведення моторів у робочий стан)](docs/safety/arming.md) | `copter/source/docs/arming_the_motors.rst` | `69ee15a244d3` | 2026-09-24 |
+| common-prearm-safety-checks | [Pre-arm safety checks (передпольотні перевірки безпеки)](docs/safety/prearm-checks.md) | `common/source/docs/common-prearm-safety-checks.rst` | `ddd2ffa750eb` | 2026-09-24 |
+| failsafe-landing-page | [Failsafe (аварійний захист)](docs/safety/index.md) | `copter/source/docs/failsafe-landing-page.rst` | `9d8d33a6b9b0` | 2026-09-24 |
+| radio-failsafe | [Radio failsafe (аварійний захист при втраті радіокерування)](docs/safety/radio-failsafe.md) | `copter/source/docs/radio-failsafe.rst` | `377d3dfa3dc4` | 2026-09-24 |
+| failsafe-battery | [Battery failsafe (аварійний захист батареї)](docs/safety/battery-failsafe.md) | `copter/source/docs/failsafe-battery.rst` | `98850bee2f7e` | 2026-09-24 |
+| gcs-failsafe | [GCS failsafe (аварійний захист при втраті зв'язку з GCS)](docs/safety/gcs-failsafe.md) | `copter/source/docs/gcs-failsafe.rst` | `883d7ddaf355` | 2026-09-24 |
+| common-ekf-inav-failsafe | [EKF failsafe (аварійний захист при збої оцінки позиції)](docs/safety/ekf-failsafe.md) | `common/source/docs/common-ekf-inav-failsafe.rst` | `9d8d33a6b9b0` | 2026-09-24 |
+| deadreckoning-failsafe | [Dead reckoning failsafe (політ за розрахунком після втрати позиції)](docs/safety/dead-reckoning-failsafe.md) | `copter/source/docs/deadreckoning-failsafe.rst` | `c540136023ae` | 2026-09-24 |
+| vibration-failsafe | [Vibration failsafe (аварійний захист від вібрацій)](docs/safety/vibration-failsafe.md) | `copter/source/docs/vibration-failsafe.rst` | `249ab04a1456` | 2026-09-24 |
+| crash_check | [Crash check (виявлення аварії)](docs/safety/crash-check.md) | `copter/source/docs/crash_check.rst` | `036f61c35382` | 2026-09-24 |
+| common-watchdog | [Independent watchdog і crash dump (незалежний сторожовий таймер і дамп збою)](docs/safety/watchdog.md) | `common/source/docs/common-watchdog.rst` | `3e653161c0fb` | 2026-09-24 |
+| common-parachute | [Парашут](docs/safety/parachute.md) | `common/source/docs/common-parachute.rst` | `668e6f10a41d` | 2026-09-24 |
+| terrain-following | [Terrain following (політ за рельєфом в Auto, Guided тощо)](docs/safety/terrain-following.md) | `copter/source/docs/terrain-following.rst` | `0efd6f201080` | 2026-09-24 |

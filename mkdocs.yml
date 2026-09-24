@@ -101,4 +101,19 @@ nav:
           - Калібрування ESC: first-time-setup/esc-calibration.md
           - Діапазон моторів: first-time-setup/set-motor-range.md
           - Додаткове обладнання: first-time-setup/optional-hardware.md
+  - Безпека:
+      - Arming the motors: safety/arming.md
+      - Перевірки pre-arm: safety/prearm-checks.md
+      - Failsafe:
+          - safety/index.md
+          - Radio failsafe: safety/radio-failsafe.md
+          - Battery failsafe: safety/battery-failsafe.md
+          - GCS failsafe: safety/gcs-failsafe.md
+          - EKF failsafe: safety/ekf-failsafe.md
+          - Dead reckoning failsafe: safety/dead-reckoning-failsafe.md
+          - Vibration failsafe: safety/vibration-failsafe.md
+          - Terrain following: safety/terrain-following.md
+          - Crash check: safety/crash-check.md
+          - Парашут: safety/parachute.md
+          - Watchdog і crash dump: safety/watchdog.md
   - Терміни: glossary.md

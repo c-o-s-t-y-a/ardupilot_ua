@@ -70,7 +70,7 @@ def resolve(md_page, ref):
         rel = os.path.relpath(done[stem], Path(md_page).resolve().parent)
         # у перекладі якір — slug українського заголовка, а не мітка RST
         return rel + (f"#{anchor}  ⚠ якір перевірте: у перекладі slug заголовка інший" if anchor else "")
-    site = "copter" if wiki in ("copter", "plane", "rover") else wiki
+    site = wiki
     return f"https://ardupilot.org/{site}/docs/{stem}.html" + (f"#{anchor}" if anchor else "") + "  *(ще не перекладено)*"
 
 
