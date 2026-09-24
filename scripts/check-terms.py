@@ -8,6 +8,8 @@
   2. наступні появи — без перекладу в дужках;
   3. немає української форми терміна поза дужками («акселерометр»);
   4. немає транслітерацій («фейлсейф», «армінг», ...).
+Після терміна через дефіс дозволено лише закінчення -и/-ах («log-и») або ціле
+слово з 4+ літер — складне слово («FPV-камера»); «log-ів», «ESC-ом» — помилка.
 Не перевіряються: заголовки (для правил 1–2), код `...`, жирні латинські
 назви UI (**Calibrate Level**), URL-и посилань і картинок, рядок «> Оригінал:».
 
@@ -102,7 +104,8 @@ def check(path, terms):
         first = True
         for m in en_pattern(en).finditer(text):
             suffix = re.search(r"-[а-яіїєґ]+$", m.group(0))
-            if suffix and suffix.group(0) not in ALLOWED_SUFFIXES:
+            # «FPV-камера», «log-файл» — складне слово (частина ≥4 літер), а не відмінок
+            if suffix and suffix.group(0) not in ALLOWED_SUFFIXES and len(suffix.group(0)) <= 4:
                 out.append(f"{lineno(m.start())}: суфікс «{m.group(0)}» — дозволено лише -и/-ах")
         for m in en_pattern(en).finditer(body):
             if is_ignored(en, m.start()):
