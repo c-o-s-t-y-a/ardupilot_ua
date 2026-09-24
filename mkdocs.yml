@@ -57,7 +57,14 @@ nav:
   - Перше налаштування:
       - first-time-setup/index.md
       - Встановлення GCS: first-time-setup/install-gcs.md
-      - Збирання системи autopilot: first-time-setup/autopilot-assembly.md
+      - Збирання системи autopilot:
+          - first-time-setup/autopilot-assembly.md
+          - Монтаж autopilot: first-time-setup/mounting-autopilot.md
+          - Підключення autopilot: first-time-setup/autopilot-wiring.md
+          - Підключення ESC і моторів: first-time-setup/connect-escs-and-motors.md
+          - Модуль GPS + compass: first-time-setup/gps-compass-module.md
+          - Гасіння вібрацій: first-time-setup/vibration-damping.md
+          - Магнітні завади: first-time-setup/magnetic-interference.md
       - Завантаження firmware:
           - first-time-setup/loading-firmware.md
           - На плати з bootloader: first-time-setup/firmware-with-bootloader.md

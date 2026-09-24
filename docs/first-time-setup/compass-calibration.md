@@ -69,7 +69,7 @@ Onboard Calibration можна запускати перемикачем на RC
 
 Більше про налаштування compass — у [Advanced Compass Setup](https://ardupilot.org/copter/docs/common-compass-setup-advanced.html) *(ще не перекладено)*: як налаштувати додаткові compass, [автоматичне визначення зміщень](https://ardupilot.org/copter/docs/common-compass-setup-advanced.html#automatic-compass-offset-calibration) *(ще не перекладено)*, нестандартна орієнтація compass, [compassmot](https://ardupilot.org/copter/docs/common-compass-setup-advanced.html#common-compass-setup-advanced-compassmot-compensation-for-interference-from-the-power-wires-escs-and-motors) *(ще не перекладено)* тощо.
 
-Загальне обговорення магнітних завад і способів їх зменшити — на сторінці [Магнітні завади](https://ardupilot.org/copter/docs/common-magnetic-interference.html) *(ще не перекладено)*.
+Загальне обговорення магнітних завад і способів їх зменшити — на сторінці [Магнітні завади](magnetic-interference.md).
 
 ## Відео
 

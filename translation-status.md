@@ -26,3 +26,8 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-limited-firmware | [Обмеження firmware (прошивки) на різних autopilot](docs/first-time-setup/limited-firmware.md) | `common/source/docs/common-limited-firmware.rst` | `d3eef1119d79` | 2026-09-24 |
 | common-install-sdcard | [Завантаження firmware (прошивки) з SD-карти](docs/first-time-setup/firmware-sd-card.md) | `common/source/docs/common-install-sdcard.rst` | `8c3852dd2001` | 2026-09-24 |
 | common-custom-firmware | [Custom Firmware Builder (конструктор власних збірок firmware)](docs/first-time-setup/custom-firmware.md) | `common/source/docs/common-custom-firmware.rst` | `8c8c1a6d6c57` | 2026-09-24 |
+| common-mounting-the-flight-controller | [Монтаж autopilot (автопілота)](docs/first-time-setup/mounting-autopilot.md) | `common/source/docs/common-mounting-the-flight-controller.rst` | `33f920d9ea4e` | 2026-09-24 |
+| common-flight-controller-wiring | [Типове підключення autopilot (автопілота)](docs/first-time-setup/autopilot-wiring.md) | `common/source/docs/common-flight-controller-wiring.rst` | `9404abeaf113` | 2026-09-24 |
+| common-installing-3dr-ublox-gps-compass-module | [Модуль UBlox GPS + compass (компас)](docs/first-time-setup/gps-compass-module.md) | `common/source/docs/common-installing-3dr-ublox-gps-compass-module.rst` | `d3eef1119d79` | 2026-09-24 |
+| common-vibration-damping | [Гасіння вібрацій](docs/first-time-setup/vibration-damping.md) | `common/source/docs/common-vibration-damping.rst` | `7701c0ed8ad4` | 2026-09-24 |
+| common-magnetic-interference | [Магнітні завади](docs/first-time-setup/magnetic-interference.md) | `common/source/docs/common-magnetic-interference.rst` | `13db7d3f029f` | 2026-09-24 |
