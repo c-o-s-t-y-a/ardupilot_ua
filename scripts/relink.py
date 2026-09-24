@@ -36,6 +36,8 @@ def main():
             if not target:
                 return m.group(0)
             rel = os.path.relpath(target, f.resolve().parent)
+            if m.group(2):
+                print(f"  ⚠ {f.name}: якір {m.group(2)} → {rel} — замініть на slug українського заголовка")
             return f"]({rel}{m.group(2) or ''})"
 
         new = LINK.sub(repl, text)
