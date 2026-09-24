@@ -46,7 +46,7 @@ ls /dev/serial/by-id/
 
 Плата з сумісним bootloader з'являється там під власною назвою, наприклад:
 
-```none
+```text
 usb-CubePilot_CubeOrange+_1F0033000A51333031333230-if00
 ```
 
@@ -110,10 +110,10 @@ Firmware для кожного підтримуваного autopilot публі
 - знайдіть каталог, назва якого найближча до вашого autopilot
 - завантажте файл, що відповідає способу запису:
 
-  - `arduXXX.apj` — лише firmware, для запису через GCS на плату, де вже є сумісний bootloader
-  - `arduXXX_with_bl.hex` — bootloader і firmware разом, для запису через DFU на плату без сумісного bootloader
-  - `arduXXX.abin` — для [завантаження з SD-карти](https://ardupilot.org/copter/docs/common-install-sdcard.html) *(ще не перекладено)* на autopilot, що це підтримують
-  - `arduXXX.bin` — «сирий» бінарний файл, для `dfu-util` і для плат, що працюють із зовнішньої flash
+    - `arduXXX.apj` — лише firmware, для запису через GCS на плату, де вже є сумісний bootloader
+    - `arduXXX_with_bl.hex` — bootloader і firmware разом, для запису через DFU на плату без сумісного bootloader
+    - `arduXXX.abin` — для [завантаження з SD-карти](https://ardupilot.org/copter/docs/common-install-sdcard.html) *(ще не перекладено)* на autopilot, що це підтримують
+    - `arduXXX.bin` — «сирий» бінарний файл, для `dfu-util` і для плат, що працюють із зовнішньої flash
 
 > **Примітка.** Деякі autopilot орієнтовані на певний тип апарата, і firmware для інших типів для них автоматично не збирається. Проте ArduPilot для цих апаратів можна зібрати на [Custom Firmware Build Server](https://custom.ardupilot.org/).
 

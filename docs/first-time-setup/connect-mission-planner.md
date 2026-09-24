@@ -76,11 +76,11 @@ Autopilot з процесорами F7 або H7 та інтерфейсами C
 
 - Відкрийте Device Manager Windows і знайдіть у розділі Ports COM-порт, який використовує autopilot. У нього буде той номер COM-порту, через який ви спочатку підключалися до Mission Planner. Клацніть правою кнопкою — серед варіантів буде «Update driver software». Клацніть його.
 
-  ![devicemanager](https://ardupilot.org/copter/_images/devicemanager.png)
+    ![devicemanager](https://ardupilot.org/copter/_images/devicemanager.png)
 
 - Клацніть «Browse my computer......», потім «Choose from a list...» — з'явиться такий екран:
 
-  ![composite-driver](https://ardupilot.org/copter/_images/composite-driver.png)
+    ![composite-driver](https://ardupilot.org/copter/_images/composite-driver.png)
 
 - Прокрутіть верхній список до пункту «Composite USB» і клацніть його.
 
