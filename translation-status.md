@@ -73,3 +73,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-osd-overview | [OSD (накладення даних на відео)](docs/fpv/osd.md) | `common/source/docs/common-osd-overview.rst` | `068ccd0ad534` | 2026-09-24 |
 | common-msp-osd-overview-4.2 | [MSP OSD](docs/fpv/msp-osd.md) | `common/source/docs/common-msp-osd-overview-4.2.rst` | `39349eb7b659` | 2026-09-24 |
 | common-vtx | [Підтримка VTX (відеопередавач)](docs/fpv/vtx.md) | `common/source/docs/common-vtx.rst` | `39349eb7b659` | 2026-09-24 |
+| common-video-landingpage | [Системи HD-відео для FPV](docs/fpv/hd-video.md) | `common/source/docs/common-video-landingpage.rst` | `47f488827b21` | 2026-09-24 |
