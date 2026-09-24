@@ -4,16 +4,16 @@
 
 ![Квадрокоптер](https://ardupilot.org/copter/_images/Quad_Color6.jpg)
 
-Перше налаштування автопілота включає: встановлення наземної станції (GCS), монтаж автопілота на раму, підключення приймача, живлення і моторів, а потім початкову конфігурацію і калібрування.
+Перше налаштування autopilot (автопілот) включає: завантаження і встановлення GCS (наземна станція керування), монтаж autopilot на frame (рама), підключення до receiver (приймач), живлення і моторів, а потім початкову конфігурацію і калібрування.
 
-> **Примітка.** Розділ передбачає, що ви вже [обрали і зібрали раму](https://ardupilot.org/copter/docs/choosing-a-frame.html) та [обрали автопілот](https://ardupilot.org/copter/docs/common-autopilots.html).
+> **Примітка.** Розділ передбачає, що ви вже [обрали і зібрали frame](https://ardupilot.org/copter/docs/choosing-a-frame.html) *(ще не перекладено)* та [обрали autopilot](https://ardupilot.org/copter/docs/common-autopilots.html) *(ще не перекладено)*.
 
-Етапи:
+Докладніше про кожен етап (всередині розділів — з розбивкою за моделями autopilot):
 
-1. [Встановлення наземної станції](https://ardupilot.org/copter/docs/common-install-gcs.html) *(ще не перекладено)*
-2. [Збирання системи автопілота](https://ardupilot.org/copter/docs/autopilot-assembly-instructions.html) *(ще не перекладено)*
-3. [Завантаження прошивки](https://ardupilot.org/copter/docs/common-loading-firmware.html) *(ще не перекладено)*
-4. [Підключення Mission Planner до автопілота](https://ardupilot.org/copter/docs/common-connect-mission-planner-autopilot.html) *(ще не перекладено)*
+1. [Встановлення GCS](install-gcs.md)
+2. [Збирання системи autopilot](autopilot-assembly.md)
+3. [Завантаження firmware (прошивка)](loading-firmware.md)
+4. [Підключення Mission Planner до autopilot](connect-mission-planner.md)
 5. [Конфігурація](mandatory-hardware.md)
 
-> **Порада.** Наступний розділ — [Перший політ](https://ardupilot.org/copter/docs/flying-arducopter.html) — пояснює, як почати літати і яке додаткове налаштування та тюнінг потрібні новим системам.
+> **Порада.** Наступний розділ — [Перший політ](https://ardupilot.org/copter/docs/flying-arducopter.html) *(ще не перекладено)* — пояснює, як почати літати на Copter, і яке подальше tuning (точне налаштування) та конфігурація потрібні новим системам.
