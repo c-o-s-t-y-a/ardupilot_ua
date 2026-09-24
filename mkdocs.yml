@@ -58,7 +58,14 @@ nav:
       - first-time-setup/index.md
       - Встановлення GCS: first-time-setup/install-gcs.md
       - Збирання системи autopilot: first-time-setup/autopilot-assembly.md
-      - Завантаження firmware: first-time-setup/loading-firmware.md
+      - Завантаження firmware:
+          - first-time-setup/loading-firmware.md
+          - На плати з bootloader: first-time-setup/firmware-with-bootloader.md
+          - На плати без bootloader (DFU): first-time-setup/firmware-dfu.md
+          - З SD-карти: first-time-setup/firmware-sd-card.md
+          - Custom Firmware Builder: first-time-setup/custom-firmware.md
+          - Оновлення bootloader: first-time-setup/bootloader-update.md
+          - Обмеження firmware: first-time-setup/limited-firmware.md
       - Підключення Mission Planner: first-time-setup/connect-mission-planner.md
       - Обов'язкова конфігурація:
           - first-time-setup/mandatory-hardware.md

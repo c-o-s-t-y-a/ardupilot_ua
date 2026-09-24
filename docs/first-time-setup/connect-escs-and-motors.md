@@ -106,7 +106,7 @@
 
 За допомогою [Lua-скриптів](https://ardupilot.org/copter/docs/common-lua-scripts.html) *(ще не перекладено)* можна налаштувати власні типи frame з кількістю моторів до 12. Коефіцієнти roll, pitch і yaw для кожного мотора треба розрахувати й завантажити зі скрипта. Це вмикається встановленням `FRAME_CLASS` у 15 — Scripting Matrix. Див. [приклад для quad plus](https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_Scripting/examples/MotorMatrix_setup.lua) і [приклад відмовостійкого hex](https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_Scripting/examples/MotorMatrix_fault_tolerant_hex.lua).
 
-> **Примітка.** Не всі autopilot підтримують скрипти, див. [обмеження firmware (прошивка)](https://ardupilot.org/copter/docs/common-limited-firmware.html) *(ще не перекладено)*.
+> **Примітка.** Не всі autopilot підтримують скрипти, див. [обмеження firmware (прошивка)](limited-firmware.md).
 
 ### Як розрізнити пропелери за і проти годинникової стрілки
 
