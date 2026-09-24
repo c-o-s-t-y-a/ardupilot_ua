@@ -118,7 +118,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `Gyros not healthy` | Щонайменше один gyro не надає даних | Перезавантажте autopilot. Якщо помилка не зникає, замініть autopilot |
 | `Hardware safety switch` | Апаратну кнопку безпеки не натиснуто | Натисніть кнопку безпеки (зазвичай зверху на GPS) або вимкніть її, встановивши `BRD_SAFETY_DEFLT` у нуль, і перезавантажте autopilot |
 | `heater temp low (x < 45)` | Температура нагрівача плати нижча за BRD_HEAT_TARG | Дочекайтеся, поки плата прогріється. Цільову температуру можна змінити параметром `BRD_HEAT_TARG` |
-| `In OSD menu` | Триває налаштування OSD | Завершіть налаштування OSD. Перевірте [налаштування OSD](https://ardupilot.org/copter/docs/common-osd-overview.html) *(ще не перекладено)* |
+| `In OSD menu` | Триває налаштування OSD (накладення даних на відео) | Завершіть налаштування OSD. Перевірте [налаштування OSD](../fpv/osd.md) |
 | `Internal errors 0x%x l:%u %s` | Сталася внутрішня помилка | Перезавантажте autopilot. Повідомте про помилку команді розробників |
 | `Invalid FENCE_ALT_MAX value` | FENCE_ALT_MAX має бути додатним | Збільште `FENCE_ALT_MAX` |
 | `Invalid FENCE_ALT_MIN value` | FENCE_ALT_MIN має бути більшим за -100 | Збільште `FENCE_ALT_MIN` |
@@ -150,7 +150,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `OpenDroneID: operator location must be set` | Розташування оператора недоступне | Див. [налаштування Remote ID](https://ardupilot.org/copter/docs/common-remoteid.html) *(ще не перекладено)* |
 | `OpenDroneID: SYSTEM not available` | Неправильне налаштування OpenDroneID | Див. [налаштування Remote ID](https://ardupilot.org/copter/docs/common-remoteid.html) *(ще не перекладено)* |
 | `OpenDroneID: UA_TYPE required in BasicID` | Неправильне налаштування OpenDroneID | Див. [налаштування Remote ID](https://ardupilot.org/copter/docs/common-remoteid.html) *(ще не перекладено)* |
-| `OSD_TYPE2 not compatible with first OSD` | Налаштування OSD1 і OSD2 несумісні | Вимкніть другий OSD (встановіть `OSD_TYPE2` у нуль) або перевірте [налаштування OSD](https://ardupilot.org/copter/docs/common-osd-overview.html) *(ще не перекладено)* |
+| `OSD_TYPE2 not compatible with first OSD` | Налаштування OSD1 і OSD2 несумісні | Вимкніть другий OSD (встановіть `OSD_TYPE2` у нуль) або перевірте [налаштування OSD](../fpv/osd.md) |
 | `Param storage failed` | Апаратна несправність Eeprom | Перевірте живлення або замініть autopilot |
 | `parameter storage full` | Сховище Eeprom заповнене | Збережіть параметри. Скиньте до стандартних. Завантажте збережені параметри. |
 | `PiccoloCAN: Servo x not detected` | Неправильне налаштування PiccoloCAN або проблема з servo | Перевірте [інструкцію з налаштування Currawong Velocity ESC](https://ardupilot.org/copter/docs/common-velocity-can-escs.html) *(ще не перекладено)* |
@@ -185,7 +185,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `Scripting: xxx failed to start` | Lua-скрипт не вдалося запустити | Autopilot вичерпав пам'ять або Lua-скрипт налаштовано неправильно. Див. [Lua-скрипти](https://ardupilot.org/copter/docs/common-lua-scripts.html) *(ще не перекладено)* |
 | `Scripting: xxx out of memory` | Lua-скрипту не вистачило пам'яті | Збільште `SCR_HEAP_SIZE` або перевірте [налаштування Lua-скриптів](https://ardupilot.org/copter/docs/common-lua-scripts.html) *(ще не перекладено)* |
 | `Servo voltage to low (Xv < 4.3v)` | Напруга шини servo нижча за 4.3 В | Перевірте живлення задньої шини servo |
-| `SERVOx_FUNCTION=y on disabled channel` | Вихід PWM налаштовано неправильно | SERVOx_FUNCTION задано для виходу servo, який вимкнено. Див. [налаштування BLHeli](https://ardupilot.org/copter/docs/common-blheli32-passthru.html) *(ще не перекладено)* |
+| `SERVOx_FUNCTION=y on disabled channel` | Вихід PWM налаштовано неправильно | SERVOx_FUNCTION задано для виходу servo, який вимкнено. Див. [налаштування BLHeli](../fpv/blheli.md) |
 | `SERVOx_MAX is less than SERVOx_TRIM` | Вихід PWM налаштовано неправильно | Встановіть SERVOx_TRIM меншим за SERVOx_MAX |
 | `SERVOx_MIN is greater than SERVOx_TRIM` | Вихід PWM налаштовано неправильно | Встановіть SERVOx_TRIM більшим за SERVOx_MIN |
 | `System not Initialized` | Система ще завантажується | Зачекайте; якщо найближчим часом не мине, можлива проблема з датчиком, яку не виявила інша діагностика |
@@ -218,7 +218,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `Bad parameter: ATC_ANG_PIT_P must be > 0` | Неправильне налаштування регулятора положення (attitude controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning (точне налаштування)](https://ardupilot.org/copter/docs/tuning-process-instructions.html) *(ще не перекладено)* |
 | `Bad parameter: PSC_POSXY_P must be > 0` | Неправильне налаштування регулятора позиції (position controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning](https://ardupilot.org/copter/docs/tuning-process-instructions.html) *(ще не перекладено)* |
 | `Battery failsafe` | Спрацював failsafe батареї | Підключіть батарею і перевірте її напругу та ємність. Див. [налаштування failsafe батареї](battery-failsafe.md) |
-| `Check ACRO_BAL_ROLL/PITCH` | ACRO_BAL_ROLL, ACRO_BAL_PITCH від'ємні або занадто великі | Змініть `ACRO_BAL_ROLL` на значення від 0 до `ATC_ANG_RLL_P` та/або `ACRO_BAL_PITCH` — від 0 до `ATC_ANG_PIT_P`. Див. [режим Acro](https://ardupilot.org/copter/docs/acro-mode.html) *(ще не перекладено)* |
+| `Check ACRO_BAL_ROLL/PITCH` | ACRO_BAL_ROLL, ACRO_BAL_PITCH від'ємні або занадто великі | Змініть `ACRO_BAL_ROLL` на значення від 0 до `ATC_ANG_RLL_P` та/або `ACRO_BAL_PITCH` — від 0 до `ATC_ANG_PIT_P`. Див. [режим Acro](../fpv/acro-mode.md) |
 | `Check ANGLE_MAX` | ANGLE_MAX занадто великий | Зменште `ATC_ANGLE_MAX` до 80 (напр. 80 градусів) або менше |
 | `Check FS_THR_VALUE` | Неправильне налаштування failsafe RC | Встановіть `FS_THR_VALUE` між 910 і мінімумом throttle RC (напр. `RC3_MIN`. Див. [налаштування failsafe батареї](battery-failsafe.md) |
 | `Check PILOT_SPEED_UP` | PILOT_SPEED_UP занадто малий | Збільште `PILOT_SPD_UP` до додатного значення (напр. 1 = 1 м/с). Див. [режим AltHold](https://ardupilot.org/copter/docs/altholdmode.html) *(ще не перекладено)* |

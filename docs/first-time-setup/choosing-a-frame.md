@@ -15,7 +15,7 @@ ArduPilot може керувати [багатьма різними апара�
 Поширені застосування мультикоптерів:
 
 - [аерозйомка відео](https://ardupilot.org/copter/docs/common-cameras-and-gimbals.html) *(ще не перекладено)*;
-- [FPV (вигляд від першої особи)](https://ardupilot.org/copter/docs/common-fpv-first-person-view.html) *(ще не перекладено)*;
+- [FPV (вигляд від першої особи)](../fpv/index.md);
 - спорт і розваги (перегони, акробатика, вразити друзів);
 - професійніші застосування, як-от [3D-картографування](https://ardupilot.org/copter/docs/common-3d-mapping.html) *(ще не перекладено)*, доставка вантажів, сільське господарство;
 - дослідження чи власні робототехнічні [розробки](https://ardupilot.org/dev/).

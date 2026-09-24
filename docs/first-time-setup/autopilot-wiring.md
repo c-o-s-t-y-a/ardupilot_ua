@@ -36,8 +36,8 @@ ArduPilot автоматично розпізнає такі послідовн�
 
 1. receiver радіокерування (R/C) з PPM
 2. receiver SBus
-3. receiver FPort (див. [FPort receivers](https://ardupilot.org/copter/docs/common-FPort-receivers.html) *(ще не перекладено)*)
-4. receiver Crossfire (CRSF) і ELRS (див. [TBS RC](https://ardupilot.org/copter/docs/common-tbs-rc.html) *(ще не перекладено)*, потрібне повне підключення UART)
+3. receiver FPort (див. [FPort receivers](../fpv/fport.md))
+4. receiver Crossfire (CRSF) і ELRS (див. [TBS RC](../fpv/crossfire-elrs.md), потрібне повне підключення UART)
 5. receiver Spektrum DSM і DSM2
 6. сателітні receiver Spektrum DSM-X
 7. receiver IBUS
@@ -47,7 +47,7 @@ ArduPilot автоматично розпізнає такі послідовн�
 
 > **Порада.** Починаючи з firmware (прошивка) ArduPilot 4.0, як вхід для receiver можна використовувати будь-який UART autopilot замість призначеного контакту RCin чи SBUS — для цього встановіть `SERIALx_PROTOCOL` цього порту в 23. Проте деякі послідовні протоколи потребують інверсії (SBUS, FPort), і UART має вміти інвертувати вхід RX параметром `SERIALx_OPTIONS`, інакше знадобиться зовнішній інвертор. Так до autopilot можна також підключити другий receiver для резервування. Якщо перший receiver (перший, визначений як справний після запуску) відмовить, використовуватиметься другий. Зверніть увагу: для другого receiver, коли він стане активним, використовуватимуться ті самі діапазони і trim (підстроювання нейтралі) входів RC, що були відкалібровані. Щоб це працювало правильно, обидва receiver МАЮТЬ бути налаштовані не надсилати імпульсів у режимі failsafe (аварійний захист). Також треба встановити біт 10 у `RC_OPTIONS`.
 
-> **Порада.** Інформацію про сумісні receiver і їх підключення наведено в [Compatible RC Tx/Rx Systems](https://ardupilot.org/copter/docs/common-rc-systems.html) *(ще не перекладено)*. Про використання кількох receiver див. також [Multiple RC receivers](https://ardupilot.org/copter/docs/common-multiple-rx.html) *(ще не перекладено)*.
+> **Порада.** Інформацію про сумісні receiver і їх підключення наведено в [Compatible RC Tx/Rx Systems](../fpv/rc-systems.md). Про використання кількох receiver див. також [Multiple RC receivers](https://ardupilot.org/copter/docs/common-multiple-rx.html) *(ще не перекладено)*.
 
 <img src="https://ardupilot.org/copter/_images/FRSkyTaranis.jpg" alt="FRSky Taranis Transmitter" width="450">
 
@@ -103,5 +103,5 @@ ESC (електронний регулятор обертів) моторів т
 1. [Autopilot I/O](https://ardupilot.org/copter/docs/common-flight-controller-io.html) *(ще не перекладено)*
 2. [Приклад підключення на Pixhawk](https://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html) *(ще не перекладено)*
 3. [Живлення Pixhawk](https://ardupilot.org/copter/docs/common-powering-the-pixhawk.html) *(ще не перекладено)*
-4. [Compatible RC Tx/Rx Systems](https://ardupilot.org/copter/docs/common-rc-systems.html) *(ще не перекладено)*
+4. [Compatible RC Tx/Rx Systems](../fpv/rc-systems.md)
 5. [Advanced Pixhawk Quadcopter Wiring Chart](https://ardupilot.org/copter/docs/advanced-pixhawk-quadcopter-wiring-chart.html) *(ще не перекладено)*

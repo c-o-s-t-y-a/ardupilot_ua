@@ -23,7 +23,7 @@
 14. [ESC (електронний регулятор обертів) і мотори](https://ardupilot.org/copter/docs/common-escs-and-motors.html) *(ще не перекладено)*
 15. [Адаптери й комутатори Ethernet](https://ardupilot.org/copter/docs/common-ethernet-adapters.html) *(ще не перекладено)*
 16. [Зовнішні системи AHRS](https://ardupilot.org/copter/docs/common-external-ahrs.html) *(ще не перекладено)*
-17. [Відео FPV (від першої особи)](https://ardupilot.org/copter/docs/common-fpv-first-person-view.html) *(ще не перекладено)*
+17. [Відео FPV (вигляд від першої особи)](../fpv/index.md)
 18. [Датчики витрати й рівня пального](https://ardupilot.org/copter/docs/common-fuel-sensors.html) *(ще не перекладено)*
 19. [Генератори](https://ardupilot.org/copter/docs/common-generators.html) *(ще не перекладено)*
 20. [GPS/compass (компас)](https://ardupilot.org/copter/docs/common-positioning-landing-page.html) *(ще не перекладено)*
@@ -32,14 +32,14 @@
 23. [Шасі / кріплення камери, що прибирається](https://ardupilot.org/copter/docs/common-landing-gear.html) *(ще не перекладено)*
 24. [Зовнішні світлодіоди](https://ardupilot.org/copter/docs/common-external-leds.html) *(ще не перекладено)*
 25. [Навігація без GPS](https://ardupilot.org/copter/docs/common-non-gps-navigation-landing-page.html) *(ще не перекладено)*
-26. [Екранне меню (OSD)](https://ardupilot.org/copter/docs/common-osd-boards-on-screen-display.html) *(ще не перекладено)*
+26. [OSD (накладення даних на відео)](https://ardupilot.org/copter/docs/common-osd-boards-on-screen-display.html) *(ще не перекладено)*
 27. [Датчик оптичного потоку (Optical Flow)](https://ardupilot.org/copter/docs/common-optical-flow-sensors-landingpage.html) *(ще не перекладено)*
 28. [Парашут](../safety/parachute.md)
 29. [Power module (модуль живлення)](https://ardupilot.org/copter/docs/common-powermodule-landingpage.html) *(ще не перекладено)*
 30. [Живлення по кабелю-прив'язі (Power Tether)](https://ardupilot.org/copter/docs/common-power-tether.html) *(ще не перекладено)*
 31. [Кодер PPM](https://ardupilot.org/copter/docs/common-ppm-encoders-new.html) *(ще не перекладено)*
 32. [Точна посадка і Loiter](https://ardupilot.org/copter/docs/precision-landing-and-loiter.html) *(ще не перекладено)*
-33. [Системи радіокерування](https://ardupilot.org/copter/docs/common-rc-systems.html) *(ще не перекладено)*
+33. [Системи радіокерування](../fpv/rc-systems.md)
 34. [Далекоміри (сонар, лідар, камери глибини)](https://ardupilot.org/copter/docs/common-rangefinder-landingpage.html) *(ще не перекладено)*
 35. [Реле](https://ardupilot.org/copter/docs/common-relay.html) *(ще не перекладено)*
 36. [Remote ID (Drone ID)](https://ardupilot.org/copter/docs/common-remoteid.html) *(ще не перекладено)*
@@ -49,5 +49,5 @@
 40. [Розумні батареї](https://ardupilot.org/copter/docs/common-smart-battery-landingpage.html) *(ще не перекладено)*
 41. [Радіомодем telemetry](telemetry.md)
 42. [Датчики температури](https://ardupilot.org/copter/docs/common-temperature-sensor.html) *(ще не перекладено)*
-43. [Відео високої чіткості](https://ardupilot.org/copter/docs/common-video-landingpage.html) *(ще не перекладено)*
+43. [Відео високої чіткості](../fpv/hd-video.md)
 44. [Лебідка](https://ardupilot.org/copter/docs/common-daiwa-winch.html) *(ще не перекладено)*
