@@ -85,3 +85,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | input-shaping | [Налаштування параметрів input shaping](docs/tuning/input-shaping.md) | `copter/source/docs/input-shaping.rst` | `2a8dab7fca49` | 2026-09-25 |
 | quiktune | [QuikTune](docs/tuning/quiktune.md) | `copter/source/docs/quiktune.rst` | `c7c19f6d64d4` | 2026-09-25 |
 | autotune | [AutoTune](docs/tuning/autotune.md) | `copter/source/docs/autotune.rst` | `9dcead75d40b` | 2026-09-25 |
+| common-ground-resonance | [Запобігання коливанням на землі](docs/tuning/ground-resonance.md) | `common/source/docs/common-ground-resonance.rst` | `c73f7c6877dd` | 2026-09-25 |
