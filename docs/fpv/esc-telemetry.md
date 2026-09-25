@@ -6,7 +6,7 @@
 
 Дані telemetry можуть передаватися на autopilot або окремим дротом на контакт RX UART (послідовний порт) autopilot, або по сигнальному дроту, яким передається швидкість мотора (двонаправлений DShot), або повідомленнями CAN для ESC на CAN. Для ESC не на CAN ця можливість доступна переважно у вибраних ESC з BLHeli на стандартній firmware (прошивка) чи BlueJay. Але ESC може й не використовувати firmware BLHeli і все одно мати цю можливість. Наразі ArduPilot підтримує це лише для ESC, сумісних з telemetry BLHeli/BlueJay.
 
-Telemetry обертів мотора особливо корисна для керування центральною частотою гармонічного notch (режекторний фільтр) для боротьби з шумом. Докладніше — див. [ESC Telemetry based Notch](https://ardupilot.org/copter/docs/common-esc-telem-based-notch.html) *(ще не перекладено)*.
+Telemetry обертів мотора особливо корисна для керування центральною частотою гармонічного notch (режекторний фільтр) для боротьби з шумом. Докладніше — див. [ESC Telemetry based Notch](../tuning/notch-esc.md).
 
 > **Примітка.** Наразі ArduPilot не підтримує опитування ESC щодо даних telemetry через повідомлення холостого throttle (газ) по сигнальній лінії в протоколах, відмінних від DShot.
 
@@ -19,10 +19,10 @@ Telemetry обертів мотора особливо корисна для к�
 Щоб увімкнути передачу telemetry BLHeli32/AM32 на UART autopilot, встановіть такі параметри:
 
 - `SERIALx_PROTOCOL` = 16 (ESC telemetry), де «x» — номер порту SERIAL autopilot, до якого підключено дріт telemetry ESC. Відповідність між номерами портів SERIALx і фізичними UART для вашого autopilot має бути вказана на сторінці його опису, на яку веде [цей перелік](https://ardupilot.org/copter/docs/common-autopilots.html) *(ще не перекладено)*.
-- `SERVO_BLH_TRATE` — за замовчуванням 10, і зазвичай його не треба змінювати. Це вмикає telemetry від ESC з частотою оновлення 10 Гц. Якщо використовується [гармонічний notch-фільтр](https://ardupilot.org/copter/docs/common-imu-notch-filtering.html) *(ще не перекладено)*, значення можна підняти до 100.
+- `SERVO_BLH_TRATE` — за замовчуванням 10, і зазвичай його не треба змінювати. Це вмикає telemetry від ESC з частотою оновлення 10 Гц. Якщо використовується [гармонічний notch-фільтр](../tuning/notch-filtering.md), значення можна підняти до 100.
 - `SERVO_BLH_POLES` — за замовчуванням 14, що підходить для більшості безколекторних моторів, і зазвичай його не треба змінювати. Змініть за потреби, якщо ваші мотори мають іншу кількість полюсів, щоб перераховувати електричні оберти ESC у справжні оберти вала мотора.
 
-> **Примітка.** Використання обертів, отриманих через однопровідну telemetry, для налаштування центральної частоти [гармонічного notch-фільтра](https://ardupilot.org/copter/docs/common-imu-notch-filtering.html) *(ще не перекладено)* працює добре, але реагує повільніше, ніж telemetry через двонаправлений DShot. Див. наступний розділ.
+> **Примітка.** Використання обертів, отриманих через однопровідну telemetry, для налаштування центральної частоти [гармонічного notch-фільтра](../tuning/notch-filtering.md) працює добре, але реагує повільніше, ніж telemetry через двонаправлений DShot. Див. наступний розділ.
 
 ## Двонаправлений DShot
 
@@ -32,7 +32,7 @@ Telemetry обертів мотора особливо корисна для к�
 
 ### Налаштування
 
-Спершу переконайтеся, що на ESC встановлено потрібну версію BLHeli32 чи BLHeli_S. Більшість ESC постачаються без цих версій. Офіційна версія BLHeli32 32.7 підтримує двонаправлений DShot. Офіційні версії BLHeli_S двонаправлений DShot не підтримують — доведеться або купити версію від [BLHeli_S JESC](https://jflight.net/index.php?route=common/home&language=en-gb), або використати [BLHeli_S BlueJay](https://github.com/bird-sanctuary/bluejay/). Якщо спробувати ввімкнути двонаправлений DShot з неправильною версією firmware, мотори можуть працювати непередбачувано. Telemetry обертів ESC особливо корисна для керування центральними частотами гармонічних notch-фільтрів шуму, див. [ESC Telemetry based Notch](https://ardupilot.org/copter/docs/common-esc-telem-based-notch.html) *(ще не перекладено)*.
+Спершу переконайтеся, що на ESC встановлено потрібну версію BLHeli32 чи BLHeli_S. Більшість ESC постачаються без цих версій. Офіційна версія BLHeli32 32.7 підтримує двонаправлений DShot. Офіційні версії BLHeli_S двонаправлений DShot не підтримують — доведеться або купити версію від [BLHeli_S JESC](https://jflight.net/index.php?route=common/home&language=en-gb), або використати [BLHeli_S BlueJay](https://github.com/bird-sanctuary/bluejay/). Якщо спробувати ввімкнути двонаправлений DShot з неправильною версією firmware, мотори можуть працювати непередбачувано. Telemetry обертів ESC особливо корисна для керування центральними частотами гармонічних notch-фільтрів шуму, див. [ESC Telemetry based Notch](../tuning/notch-esc.md).
 
 <img src="https://ardupilot.org/copter/_images/blheli-version-check.png" alt="blheli-version-check" width="450">
 

@@ -14,7 +14,7 @@
 
 <img src="https://ardupilot.org/copter/_images/pixhawk-back-4-corners-foam.jpg" alt="pixhawk-back-4-corners-foam" width="300">
 
-> **Порада.** Вібропоглинальний поролон — простий і дієвий засіб проти вібрацій. Якщо [вимірювання вібрацій](https://ardupilot.org/copter/docs/common-measuring-vibration.html) *(ще не перекладено)* показує, що його недостатньо, альтернативні способи описано в [Гасіння вібрацій](vibration-damping.md).
+> **Порада.** Вібропоглинальний поролон — простий і дієвий засіб проти вібрацій. Якщо [вимірювання вібрацій](../tuning/measuring-vibration.md) показує, що його недостатньо, альтернативні способи описано в [Гасіння вібрацій](vibration-damping.md).
 
 ## Альтернативні орієнтації
 

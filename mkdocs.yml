@@ -116,6 +116,43 @@ nav:
           - Crash check: safety/crash-check.md
           - Парашут: safety/parachute.md
           - Watchdog і crash dump: safety/watchdog.md
+  - Перший політ:
+      - first-flight/index.md
+      - Передпольотний чекліст: first-flight/checklist.md
+      - Поради для початківців: first-flight/tips.md
+      - Throttle висіння: first-flight/hover-throttle.md
+      - AutoTrim: first-flight/autotrim.md
+      - Втрата тяги і дисбаланс yaw: first-flight/thrust-loss-yaw-imbalance.md
+      - Польоти в приміщенні: first-flight/indoor-flying.md
+      - Акробатичний мультикоптер: first-flight/aerobatic-multicopter.md
+      - Агресивний tuning контуру швидкостей: first-flight/high-loop-rate-tuning.md
+  - Tuning:
+      - tuning/index.md
+      - Процес tuning: tuning/process.md
+      - Підготовка до tuning: tuning/setup.md
+      - Перший політ для tuning: tuning/initial-flight.md
+      - Оцінювання tuning: tuning/evaluating.md
+      - Ручний tuning roll і pitch: tuning/manual-roll-pitch.md
+      - QuikTune: tuning/quiktune.md
+      - AutoTune: tuning/autotune.md
+      - Input Shaping: tuning/input-shaping.md
+      - Throttle Boost: tuning/throttle-boost.md
+      - Tuning з RC transmitter: tuning/transmitter-tuning.md
+      - Ground resonance: tuning/ground-resonance.md
+      - Вимірювання вібрацій: tuning/measuring-vibration.md
+      - Notch-фільтри:
+          - tuning/notch-filtering.md
+          - За throttle: tuning/notch-throttle.md
+          - За датчиком обертів: tuning/notch-rpm.md
+          - За ESC telemetry: tuning/notch-esc.md
+          - Гелікоптери: tuning/notch-heli.md
+          - Raw IMU Logging: tuning/raw-imu-logging.md
+          - IMU Batch Sampler: tuning/batch-sampling.md
+      - FFT у польоті:
+          - tuning/fft.md
+          - Перший політ для аналізу: tuning/fft-test-flight.md
+          - Розширене налаштування: tuning/fft-advanced.md
+          - Як це працює: tuning/fft-how-it-works.md
   - FPV:
       - fpv/index.md
       - Режими польоту FPV:

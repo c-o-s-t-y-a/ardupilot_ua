@@ -36,7 +36,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `AP_Relay not available` | Парашут налаштовано неправильно | Парашут керується через реле, але функції реле немає у firmware (прошивка). Ймовірно, використовувався [Custom build server](https://custom.ardupilot.org/) — зберіть firmware з увімкненим реле |
 | `Auxiliary authorisation refused` | Зовнішня система відмовила в авторизації | Перевірте зовнішню систему авторизації |
 | `Baro: not healthy` | Barometer (барометр) не надає даних | Перезавантажте autopilot. Якщо помилка не зникає, замініть autopilot |
-| `Batch sampling requires reboot` | Функція пакетного запису потребує перезавантаження autopilot | Перезавантажте autopilot або перевірте налаштування [пакетного запису](https://ardupilot.org/copter/docs/common-imu-batchsampling.html) *(ще не перекладено)* |
+| `Batch sampling requires reboot` | Функція пакетного запису потребує перезавантаження autopilot | Перезавантажте autopilot або перевірте налаштування [пакетного запису](../tuning/batch-sampling.md) |
 | `Battery below minimum arming capacity` | Ємність батареї нижча за BATT_ARM_MAH | Замініть батарею або змініть `BATT_ARM_MAH` |
 | `Battery below minimum arming voltage` | Напруга батареї нижча за BATT_ARM_VOLT | Замініть батарею або змініть `BATT_ARM_VOLT` |
 | `Battery capacity failsafe critical >= low` | Неправильне налаштування failsafe (аварійний захист) батареї | Перевірте, що `BATT_LOW_MAH` більший за `BATT_CRT_MAH` |
@@ -93,12 +93,12 @@ ArduPilot має набір передпольотних перевірок бе
 | `FETtec: Not initialised` | ESC (електронний регулятор обертів) FETtec не обмінюються даними з autopilot | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
 | `FETtec: x of y ESCs are not running` | ESC FETtec не обертають мотори | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
 | `FETtec: x of y ESCs are not sending telem` | ESC FETtec не обмінюються даними з autopilot | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
-| `FFT calibrating noise` | Аналіз FFT (швидке перетворення Фур'є) для Harmonic Notch (режекторний фільтр) не завершено | Дочекайтеся завершення [аналізу FFT у польоті](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
-| `FFT config MAXHZ xHz > yHz` | Неправильне налаштування FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
-| `FFT self-test failed, max error Hz` | Збій FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
-| `FFT still analyzing` | Аналіз FFT Harmonic Notch не завершено | Дочекайтеся завершення [аналізу FFT у польоті](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
-| `FFT: calibrated xHz/xHz/xHz` | Проблема FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
-| `FFT: resolution is xHz, increase length` | Неправильне налаштування FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
+| `FFT calibrating noise` | Аналіз FFT (швидке перетворення Фур'є) для Harmonic Notch (режекторний фільтр) не завершено | Дочекайтеся завершення [аналізу FFT у польоті](../tuning/fft.md) |
+| `FFT config MAXHZ xHz > yHz` | Неправильне налаштування FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](../tuning/fft.md) |
+| `FFT self-test failed, max error Hz` | Збій FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](../tuning/fft.md) |
+| `FFT still analyzing` | Аналіз FFT Harmonic Notch не завершено | Дочекайтеся завершення [аналізу FFT у польоті](../tuning/fft.md) |
+| `FFT: calibrated xHz/xHz/xHz` | Проблема FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](../tuning/fft.md) |
+| `FFT: resolution is xHz, increase length` | Неправильне налаштування FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](../tuning/fft.md) |
 | `Generator: Not healthy` | Генератор не обмінюється даними з autopilot | Перевірте [налаштування генератора](https://ardupilot.org/copter/docs/common-generators.html) *(ще не перекладено)* |
 | `Generator: No backend driver` | Firmware не містить вибраного генератора | Зберіть версію firmware з потрібним генератором на custom.ardupilot.org |
 | `GPS alt error xm (see BARO_ALTERR_MAX)` | Висоти за GPS і BARO сильно розходяться | Прочитайте опис параметра `BARO_ALTERR_MAX` |
@@ -215,8 +215,8 @@ ArduPilot має набір передпольотних перевірок бе
 | `AHRS not healthy` | AHRS/EKF ще не готовий | Зачекайте. Перезавантажте autopilot |
 | `Altitude disparity` | Висоти barometer і EKF розходяться щонайменше на 1 м | Дочекайтеся стабілізації висоти EKF. Перезавантажте autopilot |
 | `Auto mode not armable` | Arm у режимі Auto неможливий | Перемкніться в інший режим (наприклад, Loiter) або встановіть `RTL_OPTIONS` = 3. Див. [режим Auto](https://ardupilot.org/copter/docs/auto-mode.html) *(ще не перекладено)* |
-| `Bad parameter: ATC_ANG_PIT_P must be > 0` | Неправильне налаштування регулятора положення (attitude controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning (точне налаштування)](https://ardupilot.org/copter/docs/tuning-process-instructions.html) *(ще не перекладено)* |
-| `Bad parameter: PSC_POSXY_P must be > 0` | Неправильне налаштування регулятора позиції (position controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning](https://ardupilot.org/copter/docs/tuning-process-instructions.html) *(ще не перекладено)* |
+| `Bad parameter: ATC_ANG_PIT_P must be > 0` | Неправильне налаштування регулятора положення (attitude controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning (точне налаштування)](../tuning/process.md) |
+| `Bad parameter: PSC_POSXY_P must be > 0` | Неправильне налаштування регулятора позиції (position controller) | Збільште вказаний параметр до значення, більшого за нуль. Див. [інструкції з tuning](../tuning/process.md) |
 | `Battery failsafe` | Спрацював failsafe батареї | Підключіть батарею і перевірте її напругу та ємність. Див. [налаштування failsafe батареї](battery-failsafe.md) |
 | `Check ACRO_BAL_ROLL/PITCH` | ACRO_BAL_ROLL, ACRO_BAL_PITCH від'ємні або занадто великі | Змініть `ACRO_BAL_ROLL` на значення від 0 до `ATC_ANG_RLL_P` та/або `ACRO_BAL_PITCH` — від 0 до `ATC_ANG_PIT_P`. Див. [режим Acro](../fpv/acro-mode.md) |
 | `Check ANGLE_MAX` | ANGLE_MAX занадто великий | Зменште `ATC_ANGLE_MAX` до 80 (напр. 80 градусів) або менше |
@@ -225,7 +225,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `Collective below failsafe (TradHeli only)` | Вхід collective з RC нижчий за FS_THR_VALUE | Увімкніть RC transmitter або перевірте `FS_THR_VALUE`. Перевірте [налаштування failsafe RC](radio-failsafe.md) |
 | `EKF attitude is bad` | EKF не має доброї оцінки положення | Дочекайтеся стабілізації положення за EKF. Перезавантажте autopilot. Замініть autopilot |
 | `EKF compass variance` | Напрямок compass виглядає неправильним | Перенесіть апарат подалі від металу навколо. Віддаліть compass від металу на frame. Повторіть [калібрування compass](../first-time-setup/compass-calibration.md). Вимкніть вбудований compass. |
-| `EKF height variance` | Показання barometer нестабільні або високі вібрації | Зачекайте. [Виміряйте вібрації](https://ardupilot.org/copter/docs/common-measuring-vibration.html) *(ще не перекладено)* і додайте [віброізоляцію](../first-time-setup/vibration-damping.md) |
+| `EKF height variance` | Показання barometer нестабільні або високі вібрації | Зачекайте. [Виміряйте вібрації](../tuning/measuring-vibration.md) і додайте [віброізоляцію](../first-time-setup/vibration-damping.md) |
 | `EKF position variance` | Позиція GPS нестабільна | Зачекайте. Якщо ви в приміщенні, вийдіть надвір. Усуньте джерела радіозавад, що можуть заважати GPS |
 | `EKF velocity variance` | Швидкості за GPS або optical flow нестабільні | Зачекайте. Якщо ви в приміщенні, вийдіть надвір. Усуньте джерела радіозавад, що можуть заважати GPS. Перевірте [калібрування optical flow](https://ardupilot.org/copter/docs/common-optical-flow-sensor-setup.html) *(ще не перекладено)* |
 | `Fence enabled, need position estimate` | Огорожу ввімкнено, тож потрібна оцінка позиції | Зачекайте. Якщо ви в приміщенні, вийдіть надвір. Переконайтеся, що калібрування compass і accelerometer виконано. Усуньте джерела радіозавад, що можуть заважати GPS. Див. [налаштування огорожі](https://ardupilot.org/copter/docs/common-geofencing-landing-page.html) *(ще не перекладено)* |
