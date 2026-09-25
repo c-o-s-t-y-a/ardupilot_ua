@@ -86,3 +86,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | quiktune | [QuikTune](docs/tuning/quiktune.md) | `copter/source/docs/quiktune.rst` | `c7c19f6d64d4` | 2026-09-25 |
 | autotune | [AutoTune](docs/tuning/autotune.md) | `copter/source/docs/autotune.rst` | `9dcead75d40b` | 2026-09-25 |
 | common-ground-resonance | [Запобігання коливанням на землі](docs/tuning/ground-resonance.md) | `common/source/docs/common-ground-resonance.rst` | `c73f7c6877dd` | 2026-09-25 |
+| common-transmitter-tuning | [Tuning з RC transmitter](docs/tuning/transmitter-tuning.md) | `common/source/docs/common-transmitter-tuning.rst` | `3b317a05b488` | 2026-09-25 |
