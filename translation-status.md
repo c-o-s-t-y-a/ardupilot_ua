@@ -93,3 +93,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-esc-telem-based-notch | [Налаштування гармонічного notch за ESC telemetry](docs/tuning/notch-esc.md) | `common/source/docs/common-esc-telem-based-notch.rst` | `f66c76a674a3` | 2026-09-25 |
 | common-imu-fft | [Налаштування гармонічного notch за FFT у польоті](docs/tuning/fft.md) | `common/source/docs/common-imu-fft.rst` | `2b150af0f849` | 2026-09-25 |
 | common-imu-fft-how-it-works | [FFT у польоті: як це працює](docs/tuning/fft-how-it-works.md) | `common/source/docs/common-imu-fft-how-it-works.rst` | `4e1e97c02c3b` | 2026-09-25 |
+| common-imu-fft-test-flight | [Перший політ і аналіз після польоту](docs/tuning/fft-test-flight.md) | `common/source/docs/common-imu-fft-test-flight.rst` | `29835834357e` | 2026-09-25 |
