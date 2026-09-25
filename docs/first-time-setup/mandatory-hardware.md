@@ -18,4 +18,4 @@
 10. [Механізми failsafe (аварійний захист)](../safety/index.md)
 11. [Flight mode-и](https://ardupilot.org/copter/docs/flight-modes.html) *(ще не перекладено)*
 
-> **Примітка.** Проходження всіх кроків вище, а потім [інструкцій для перших польотів і tuning (точне налаштування)](https://ardupilot.org/copter/docs/flying-arducopter.html) *(ще не перекладено)* зазвичай дає безпечний процес налаштування і достатнє tuning для більшості користувачів. Альтернатива — [Methodic Configurator](https://ardupilot.github.io/MethodicConfigurator/) для покрокового налаштування.
+> **Примітка.** Проходження всіх кроків вище, а потім [інструкцій для перших польотів і tuning (точне налаштування)](../first-flight/index.md) зазвичай дає безпечний процес налаштування і достатнє tuning для більшості користувачів. Альтернатива — [Methodic Configurator](https://ardupilot.github.io/MethodicConfigurator/) для покрокового налаштування.

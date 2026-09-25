@@ -75,3 +75,36 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-vtx | [Підтримка VTX (відеопередавач)](docs/fpv/vtx.md) | `common/source/docs/common-vtx.rst` | `39349eb7b659` | 2026-09-24 |
 | common-video-landingpage | [Системи HD-відео для FPV](docs/fpv/hd-video.md) | `common/source/docs/common-video-landingpage.rst` | `47f488827b21` | 2026-09-24 |
 | common-camera-runcam | [Підтримка камер RunCam](docs/fpv/runcam.md) | `common/source/docs/common-camera-runcam.rst` | `2e132155deb9` | 2026-09-24 |
+| common-tuning | [Tuning (точне налаштування)](docs/tuning/index.md) | `common/source/docs/common-tuning.rst` | `2400ea1644f2` | 2026-09-25 |
+| tuning-process-instructions | [Інструкції з процесу tuning](docs/tuning/process.md) | `copter/source/docs/tuning-process-instructions.rst` | `6b3a51d2ad0c` | 2026-09-25 |
+| setting-up-for-tuning | [Підготовка апарата до tuning](docs/tuning/setup.md) | `copter/source/docs/setting-up-for-tuning.rst` | `d1f40723abdb` | 2026-09-25 |
+| initial-tuning-flight | [Перший політ для tuning](docs/tuning/initial-flight.md) | `copter/source/docs/initial-tuning-flight.rst` | `00c948377d64` | 2026-09-25 |
+| ac_rollpitchtuning | [Ручний tuning roll і pitch](docs/tuning/manual-roll-pitch.md) | `copter/source/docs/ac_rollpitchtuning.rst` | `4bf8636c413a` | 2026-09-25 |
+| evaluating-the-aircraft-tune | [Оцінювання tuning апарата](docs/tuning/evaluating.md) | `copter/source/docs/evaluating-the-aircraft-tune.rst` | `43262c83bd0c` | 2026-09-25 |
+| throttle-boost | [Throttle Boost](docs/tuning/throttle-boost.md) | `copter/source/docs/throttle-boost.rst` | `5b26f0fbc48b` | 2026-09-25 |
+| input-shaping | [Налаштування параметрів input shaping](docs/tuning/input-shaping.md) | `copter/source/docs/input-shaping.rst` | `2a8dab7fca49` | 2026-09-25 |
+| quiktune | [QuikTune](docs/tuning/quiktune.md) | `copter/source/docs/quiktune.rst` | `c7c19f6d64d4` | 2026-09-25 |
+| autotune | [AutoTune](docs/tuning/autotune.md) | `copter/source/docs/autotune.rst` | `9dcead75d40b` | 2026-09-25 |
+| common-ground-resonance | [Запобігання коливанням на землі](docs/tuning/ground-resonance.md) | `common/source/docs/common-ground-resonance.rst` | `c73f7c6877dd` | 2026-09-25 |
+| common-transmitter-tuning | [Tuning з RC transmitter](docs/tuning/transmitter-tuning.md) | `common/source/docs/common-transmitter-tuning.rst` | `3b317a05b488` | 2026-09-25 |
+| common-imu-notch-filtering | [Боротьба з шумом gyro за допомогою динамічних гармонічних notch-фільтрів](docs/tuning/notch-filtering.md) | `common/source/docs/common-imu-notch-filtering.rst` | `f66c76a674a3` | 2026-09-25 |
+| common-throttle-based-notch | [Налаштування динамічного notch за throttle](docs/tuning/notch-throttle.md) | `common/source/docs/common-throttle-based-notch.rst` | `d5f05292fad1` | 2026-09-25 |
+| common-rpm-based-notch | [Налаштування динамічного notch за датчиком обертів](docs/tuning/notch-rpm.md) | `common/source/docs/common-rpm-based-notch.rst` | `6cc3a3c5acc4` | 2026-09-25 |
+| common-esc-telem-based-notch | [Налаштування гармонічного notch за ESC telemetry](docs/tuning/notch-esc.md) | `common/source/docs/common-esc-telem-based-notch.rst` | `f66c76a674a3` | 2026-09-25 |
+| common-imu-fft | [Налаштування гармонічного notch за FFT у польоті](docs/tuning/fft.md) | `common/source/docs/common-imu-fft.rst` | `2b150af0f849` | 2026-09-25 |
+| common-imu-fft-how-it-works | [FFT у польоті: як це працює](docs/tuning/fft-how-it-works.md) | `common/source/docs/common-imu-fft-how-it-works.rst` | `4e1e97c02c3b` | 2026-09-25 |
+| common-imu-fft-test-flight | [Перший політ і аналіз після польоту](docs/tuning/fft-test-flight.md) | `common/source/docs/common-imu-fft-test-flight.rst` | `29835834357e` | 2026-09-25 |
+| common-imu-fft-advanced-setup | [Розширене налаштування FFT у польоті](docs/tuning/fft-advanced.md) | `common/source/docs/common-imu-fft-advanced-setup.rst` | `9a32bbefc900` | 2026-09-25 |
+| common-raw-imu-logging | [Raw IMU Logging для аналізу FFT](docs/tuning/raw-imu-logging.md) | `common/source/docs/common-raw-imu-logging.rst` | `9a32bbefc900` | 2026-09-25 |
+| common-imu-batchsampling | [Вимірювання вібрацій за допомогою IMU Batch Sampler](docs/tuning/batch-sampling.md) | `common/source/docs/common-imu-batchsampling.rst` | `baf8b3ba5ad4` | 2026-09-25 |
+| common-measuring-vibration | [Вимірювання вібрацій](docs/tuning/measuring-vibration.md) | `common/source/docs/common-measuring-vibration.rst` | `d3eef1119d79` | 2026-09-25 |
+| common-imu-notch-filtering-helicopter-setup | [Налаштування notch-фільтра для традиційного гелікоптера](docs/tuning/notch-heli.md) | `common/source/docs/common-imu-notch-filtering-helicopter-setup.rst` | `9a32bbefc900` | 2026-09-25 |
+| checklist | [Передпольотний чекліст (Copter)](docs/first-flight/checklist.md) | `copter/source/docs/checklist.rst` | `7599e284d25c` | 2026-09-25 |
+| ac_throttlemid | [Налаштування throttle висіння](docs/first-flight/hover-throttle.md) | `copter/source/docs/ac_throttlemid.rst` | `f736a988131d` | 2026-09-25 |
+| thrust_loss_yaw_imbalance | [Попередження про втрату тяги і дисбаланс yaw](docs/first-flight/thrust-loss-yaw-imbalance.md) | `copter/source/docs/thrust_loss_yaw_imbalance.rst` | `a1f93dfaabf5` | 2026-09-25 |
+| ac_tipsfornewpilots | [Поради для початківців](docs/first-flight/tips.md) | `copter/source/docs/ac_tipsfornewpilots.rst` | `e40e6ac01fad` | 2026-09-25 |
+| autotrim | [AutoTrim](docs/first-flight/autotrim.md) | `copter/source/docs/autotrim.rst` | `64fa44483828` | 2026-09-25 |
+| indoor-flying | [Поради щодо польотів у приміщенні](docs/first-flight/indoor-flying.md) | `copter/source/docs/indoor-flying.rst` | `d645d49674d3` | 2026-09-25 |
+| aerobatic-multicopter | [Акробатичний/гоночний мультикоптер](docs/first-flight/aerobatic-multicopter.md) | `copter/source/docs/aerobatic-multicopter.rst` | `321d96d9e75e` | 2026-09-25 |
+| high-loop-rate-tuning | [Агресивний tuning контуру кутових швидкостей](docs/first-flight/high-loop-rate-tuning.md) | `copter/source/docs/high-loop-rate-tuning.rst` | `321d96d9e75e` | 2026-09-25 |
+| flying-arducopter | [Перший політ із Copter](docs/first-flight/index.md) | `copter/source/docs/flying-arducopter.rst` | `7c8bd323ffff` | 2026-09-25 |
