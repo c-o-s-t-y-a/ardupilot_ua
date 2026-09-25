@@ -102,3 +102,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | checklist | [Передпольотний чекліст (Copter)](docs/first-flight/checklist.md) | `copter/source/docs/checklist.rst` | `7599e284d25c` | 2026-09-25 |
 | ac_throttlemid | [Налаштування throttle висіння](docs/first-flight/hover-throttle.md) | `copter/source/docs/ac_throttlemid.rst` | `f736a988131d` | 2026-09-25 |
 | thrust_loss_yaw_imbalance | [Попередження про втрату тяги і дисбаланс yaw](docs/first-flight/thrust-loss-yaw-imbalance.md) | `copter/source/docs/thrust_loss_yaw_imbalance.rst` | `a1f93dfaabf5` | 2026-09-25 |
+| ac_tipsfornewpilots | [Поради для початківців](docs/first-flight/tips.md) | `copter/source/docs/ac_tipsfornewpilots.rst` | `e40e6ac01fad` | 2026-09-25 |
