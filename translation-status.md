@@ -84,3 +84,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | throttle-boost | [Throttle Boost](docs/tuning/throttle-boost.md) | `copter/source/docs/throttle-boost.rst` | `5b26f0fbc48b` | 2026-09-25 |
 | input-shaping | [Налаштування параметрів input shaping](docs/tuning/input-shaping.md) | `copter/source/docs/input-shaping.rst` | `2a8dab7fca49` | 2026-09-25 |
 | quiktune | [QuikTune](docs/tuning/quiktune.md) | `copter/source/docs/quiktune.rst` | `c7c19f6d64d4` | 2026-09-25 |
+| autotune | [AutoTune](docs/tuning/autotune.md) | `copter/source/docs/autotune.rst` | `9dcead75d40b` | 2026-09-25 |
