@@ -95,3 +95,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-imu-fft-how-it-works | [FFT у польоті: як це працює](docs/tuning/fft-how-it-works.md) | `common/source/docs/common-imu-fft-how-it-works.rst` | `4e1e97c02c3b` | 2026-09-25 |
 | common-imu-fft-test-flight | [Перший політ і аналіз після польоту](docs/tuning/fft-test-flight.md) | `common/source/docs/common-imu-fft-test-flight.rst` | `29835834357e` | 2026-09-25 |
 | common-imu-fft-advanced-setup | [Розширене налаштування FFT у польоті](docs/tuning/fft-advanced.md) | `common/source/docs/common-imu-fft-advanced-setup.rst` | `9a32bbefc900` | 2026-09-25 |
+| common-raw-imu-logging | [Raw IMU Logging для аналізу FFT](docs/tuning/raw-imu-logging.md) | `common/source/docs/common-raw-imu-logging.rst` | `9a32bbefc900` | 2026-09-25 |
