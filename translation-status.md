@@ -107,3 +107,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | indoor-flying | [Поради щодо польотів у приміщенні](docs/first-flight/indoor-flying.md) | `copter/source/docs/indoor-flying.rst` | `d645d49674d3` | 2026-09-25 |
 | aerobatic-multicopter | [Акробатичний/гоночний мультикоптер](docs/first-flight/aerobatic-multicopter.md) | `copter/source/docs/aerobatic-multicopter.rst` | `321d96d9e75e` | 2026-09-25 |
 | high-loop-rate-tuning | [Агресивний tuning контуру кутових швидкостей](docs/first-flight/high-loop-rate-tuning.md) | `copter/source/docs/high-loop-rate-tuning.rst` | `321d96d9e75e` | 2026-09-25 |
+| flying-arducopter | [Перший політ із Copter](docs/first-flight/index.md) | `copter/source/docs/flying-arducopter.rst` | `7c8bd323ffff` | 2026-09-25 |
