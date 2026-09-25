@@ -76,3 +76,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-video-landingpage | [Системи HD-відео для FPV](docs/fpv/hd-video.md) | `common/source/docs/common-video-landingpage.rst` | `47f488827b21` | 2026-09-24 |
 | common-camera-runcam | [Підтримка камер RunCam](docs/fpv/runcam.md) | `common/source/docs/common-camera-runcam.rst` | `2e132155deb9` | 2026-09-24 |
 | common-tuning | [Tuning (точне налаштування)](docs/tuning/index.md) | `common/source/docs/common-tuning.rst` | `2400ea1644f2` | 2026-09-25 |
+| tuning-process-instructions | [Інструкції з процесу tuning](docs/tuning/process.md) | `copter/source/docs/tuning-process-instructions.rst` | `6b3a51d2ad0c` | 2026-09-25 |
