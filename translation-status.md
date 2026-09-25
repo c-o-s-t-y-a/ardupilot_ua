@@ -104,3 +104,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | thrust_loss_yaw_imbalance | [Попередження про втрату тяги і дисбаланс yaw](docs/first-flight/thrust-loss-yaw-imbalance.md) | `copter/source/docs/thrust_loss_yaw_imbalance.rst` | `a1f93dfaabf5` | 2026-09-25 |
 | ac_tipsfornewpilots | [Поради для початківців](docs/first-flight/tips.md) | `copter/source/docs/ac_tipsfornewpilots.rst` | `e40e6ac01fad` | 2026-09-25 |
 | autotrim | [AutoTrim](docs/first-flight/autotrim.md) | `copter/source/docs/autotrim.rst` | `64fa44483828` | 2026-09-25 |
+| indoor-flying | [Поради щодо польотів у приміщенні](docs/first-flight/indoor-flying.md) | `copter/source/docs/indoor-flying.rst` | `d645d49674d3` | 2026-09-25 |
