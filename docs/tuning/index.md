@@ -16,6 +16,6 @@
 10. [Tuning з RC transmitter (пульт радіокерування)](transmitter-tuning.md)
 11. [Налаштування notch (режекторний фільтр)](notch-filtering.md)
 12. [FFT (швидке перетворення Фур'є) у польоті](fft.md)
-13. [Боротьба з ground resonance](ground-resonance.md)
+13. [Боротьба з ground resonance (резонанс на землі)](ground-resonance.md)
 
 > **Примітка.** Для покрокового налаштування можна скористатися [Methodic Configurator](https://ardupilot.github.io/MethodicConfigurator/).
