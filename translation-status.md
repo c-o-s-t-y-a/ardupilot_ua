@@ -81,3 +81,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | initial-tuning-flight | [Перший політ для tuning](docs/tuning/initial-flight.md) | `copter/source/docs/initial-tuning-flight.rst` | `00c948377d64` | 2026-09-25 |
 | ac_rollpitchtuning | [Ручний tuning roll і pitch](docs/tuning/manual-roll-pitch.md) | `copter/source/docs/ac_rollpitchtuning.rst` | `4bf8636c413a` | 2026-09-25 |
 | evaluating-the-aircraft-tune | [Оцінювання tuning апарата](docs/tuning/evaluating.md) | `copter/source/docs/evaluating-the-aircraft-tune.rst` | `43262c83bd0c` | 2026-09-25 |
+| throttle-boost | [Throttle Boost](docs/tuning/throttle-boost.md) | `copter/source/docs/throttle-boost.rst` | `5b26f0fbc48b` | 2026-09-25 |
