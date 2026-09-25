@@ -99,3 +99,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-imu-batchsampling | [Вимірювання вібрацій за допомогою IMU Batch Sampler](docs/tuning/batch-sampling.md) | `common/source/docs/common-imu-batchsampling.rst` | `baf8b3ba5ad4` | 2026-09-25 |
 | common-measuring-vibration | [Вимірювання вібрацій](docs/tuning/measuring-vibration.md) | `common/source/docs/common-measuring-vibration.rst` | `d3eef1119d79` | 2026-09-25 |
 | common-imu-notch-filtering-helicopter-setup | [Налаштування notch-фільтра для традиційного гелікоптера](docs/tuning/notch-heli.md) | `common/source/docs/common-imu-notch-filtering-helicopter-setup.rst` | `9a32bbefc900` | 2026-09-25 |
+| checklist | [Передпольотний чекліст (Copter)](docs/first-flight/checklist.md) | `copter/source/docs/checklist.rst` | `7599e284d25c` | 2026-09-25 |
