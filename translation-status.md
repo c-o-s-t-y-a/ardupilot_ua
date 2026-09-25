@@ -89,3 +89,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-transmitter-tuning | [Tuning з RC transmitter](docs/tuning/transmitter-tuning.md) | `common/source/docs/common-transmitter-tuning.rst` | `3b317a05b488` | 2026-09-25 |
 | common-imu-notch-filtering | [Боротьба з шумом gyro за допомогою динамічних гармонічних notch-фільтрів](docs/tuning/notch-filtering.md) | `common/source/docs/common-imu-notch-filtering.rst` | `f66c76a674a3` | 2026-09-25 |
 | common-throttle-based-notch | [Налаштування динамічного notch за throttle](docs/tuning/notch-throttle.md) | `common/source/docs/common-throttle-based-notch.rst` | `d5f05292fad1` | 2026-09-25 |
+| common-rpm-based-notch | [Налаштування динамічного notch за датчиком обертів](docs/tuning/notch-rpm.md) | `common/source/docs/common-rpm-based-notch.rst` | `6cc3a3c5acc4` | 2026-09-25 |
