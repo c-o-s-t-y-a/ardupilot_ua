@@ -93,7 +93,7 @@ ArduPilot має набір передпольотних перевірок бе
 | `FETtec: Not initialised` | ESC (електронний регулятор обертів) FETtec не обмінюються даними з autopilot | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
 | `FETtec: x of y ESCs are not running` | ESC FETtec не обертають мотори | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
 | `FETtec: x of y ESCs are not sending telem` | ESC FETtec не обмінюються даними з autopilot | Див. [налаштування FETtec](https://ardupilot.org/copter/docs/common-fettec-onewire.html) *(ще не перекладено)* |
-| `FFT calibrating noise` | Аналіз FFT Harmonic Notch не завершено | Дочекайтеся завершення [аналізу FFT у польоті](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
+| `FFT calibrating noise` | Аналіз FFT (швидке перетворення Фур'є) для Harmonic Notch (режекторний фільтр) не завершено | Дочекайтеся завершення [аналізу FFT у польоті](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
 | `FFT config MAXHZ xHz > yHz` | Неправильне налаштування FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
 | `FFT self-test failed, max error Hz` | Збій FFT Harmonic Notch | Див. [налаштування In-Flight FFT Harmonic Notch](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |
 | `FFT still analyzing` | Аналіз FFT Harmonic Notch не завершено | Дочекайтеся завершення [аналізу FFT у польоті](https://ardupilot.org/copter/docs/common-imu-fft.html) *(ще не перекладено)* |

@@ -6,7 +6,7 @@
 
 Дані telemetry можуть передаватися на autopilot або окремим дротом на контакт RX UART (послідовний порт) autopilot, або по сигнальному дроту, яким передається швидкість мотора (двонаправлений DShot), або повідомленнями CAN для ESC на CAN. Для ESC не на CAN ця можливість доступна переважно у вибраних ESC з BLHeli на стандартній firmware (прошивка) чи BlueJay. Але ESC може й не використовувати firmware BLHeli і все одно мати цю можливість. Наразі ArduPilot підтримує це лише для ESC, сумісних з telemetry BLHeli/BlueJay.
 
-Telemetry обертів мотора особливо корисна для керування центральною частотою гармонічних notch-фільтрів для боротьби з шумом. Докладніше — див. [ESC Telemetry based Notch](https://ardupilot.org/copter/docs/common-esc-telem-based-notch.html) *(ще не перекладено)*.
+Telemetry обертів мотора особливо корисна для керування центральною частотою гармонічного notch (режекторний фільтр) для боротьби з шумом. Докладніше — див. [ESC Telemetry based Notch](https://ardupilot.org/copter/docs/common-esc-telem-based-notch.html) *(ще не перекладено)*.
 
 > **Примітка.** Наразі ArduPilot не підтримує опитування ESC щодо даних telemetry через повідомлення холостого throttle (газ) по сигнальній лінії в протоколах, відмінних від DShot.
 
