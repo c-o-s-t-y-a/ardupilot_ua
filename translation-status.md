@@ -100,3 +100,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-measuring-vibration | [Вимірювання вібрацій](docs/tuning/measuring-vibration.md) | `common/source/docs/common-measuring-vibration.rst` | `d3eef1119d79` | 2026-09-25 |
 | common-imu-notch-filtering-helicopter-setup | [Налаштування notch-фільтра для традиційного гелікоптера](docs/tuning/notch-heli.md) | `common/source/docs/common-imu-notch-filtering-helicopter-setup.rst` | `9a32bbefc900` | 2026-09-25 |
 | checklist | [Передпольотний чекліст (Copter)](docs/first-flight/checklist.md) | `copter/source/docs/checklist.rst` | `7599e284d25c` | 2026-09-25 |
+| ac_throttlemid | [Налаштування throttle висіння](docs/first-flight/hover-throttle.md) | `copter/source/docs/ac_throttlemid.rst` | `f736a988131d` | 2026-09-25 |
