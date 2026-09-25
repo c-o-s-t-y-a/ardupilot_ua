@@ -77,3 +77,4 @@ Hash — останній коміт [ardupilot_wiki](https://github.com/ArduPil
 | common-camera-runcam | [Підтримка камер RunCam](docs/fpv/runcam.md) | `common/source/docs/common-camera-runcam.rst` | `2e132155deb9` | 2026-09-24 |
 | common-tuning | [Tuning (точне налаштування)](docs/tuning/index.md) | `common/source/docs/common-tuning.rst` | `2400ea1644f2` | 2026-09-25 |
 | tuning-process-instructions | [Інструкції з процесу tuning](docs/tuning/process.md) | `copter/source/docs/tuning-process-instructions.rst` | `6b3a51d2ad0c` | 2026-09-25 |
+| setting-up-for-tuning | [Підготовка апарата до tuning](docs/tuning/setup.md) | `copter/source/docs/setting-up-for-tuning.rst` | `d1f40723abdb` | 2026-09-25 |
